@@ -47,6 +47,6 @@ Available options that can be added to the `cmake` command:
 
 
 # Test FreeLing
-After installing, you are ready to use FreeLing. See sections [Test FreeLing Installation on Mac](test-mac.md), [Execute FreeLing demo](#analyzer.md) and [Call FreeLing Library](apis-mac.md) to find out more on how to use FreeLing.     
+After installing, you are ready to use FreeLing. See sections [Test FreeLing Installation on Mac](test-mac.md), [Execute FreeLing demo](../analyzer.md) and [Call FreeLing Library](apis-mac.md) to find out more on how to use FreeLing.     
 
 

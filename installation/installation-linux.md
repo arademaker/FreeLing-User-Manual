@@ -70,5 +70,5 @@ The procedure to install a locale in your system varies depending on your distri
   and select the desired locales from the list.
 
 # Test FreeLing
-After installing, you are ready to use FreeLing. See sections [Test FreeLing Installation on Linux](test-linux.md), [Execute FreeLing demo](#analyzer.md) and [Call FreeLing Library](apis-linux.md) to find out more on how to use FreeLing.     
+After installing, you are ready to use FreeLing. See sections [Test FreeLing Installation on Linux](test-linux.md), [Execute FreeLing demo](../analyzer.md) and [Call FreeLing Library](apis-linux.md) to find out more on how to use FreeLing.     
 
