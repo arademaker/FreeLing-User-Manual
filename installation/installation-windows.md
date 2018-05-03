@@ -53,4 +53,9 @@ Available options that can be added to the `cmake` command:
 |`-DPYTHON2_API=ON` | Build Python 2 API (default: `OFF`. See [Building and using APIs on Windows](apis-windows.md) for details).|
 |`-DPYTHON3_API=ON` | Build Python 3 API (default: `OFF`. See [Building and using APIs on Windows](apis-windows.md) for details).|
 
+# Test FreeLing
+After installing, you are ready to use FreeLing. See sections [Test FreeLing Installation on Windows](test-windows.md), [Execute FreeLing demo](analyzer.md) and [Call FreeLing Library](apis-windows.md) to find out more on how to use FreeLing.
+
+
+
 

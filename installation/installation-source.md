@@ -29,4 +29,3 @@ To install from source, you need to follow three steps:
    * [Build FreeLing on MacOS](installation-mac.md)
 
 
-

@@ -45,8 +45,11 @@ Available options that can be added to the `cmake` command:
 |`-DPYTHON2_API=ON` | Build Python 2 API (default: `OFF`. See [Building and using APIs on Linux](apis-linux.md) for details).|
 |`-DPYTHON3_API=ON` | Build Python 3 API (default: `OFF`. See [Building and using APIs on Linux](apis-linux.md) for details).|
 
+# Test FreeLing
+After installing, you are ready to use FreeLing. See sections [Test FreeLing Installation on Linux](test-linux.md), [Execute FreeLing demo](#analyzer.md) and [Call FreeLing Library](apis-linux.md) to find out more on how to use FreeLing.     
 
-## Locale-related problems when installing {#locale-related-problems-when-installing}
+
+# Locale-related problems when installing {#locale-related-problems-when-installing}
 
 If you get an error about `bad locale` when you enter `make install` or when you try to execute the `analyzer` sample program, you probably need to generate some locales in your system.
 
@@ -66,5 +69,6 @@ The procedure to install a locale in your system varies depending on your distri
   `dpkg-reconfigure locales`  
   and select the desired locales from the list.
 
-
+# Test FreeLing
+After installing, you are ready to use FreeLing. See sections [Test FreeLing Installation on Linux](test-linux.md), [Execute FreeLing demo](#analyzer.md) and [Call FreeLing Library](apis-linux.md) to find out more on how to use FreeLing.     
 
