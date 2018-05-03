@@ -15,6 +15,10 @@
        * [Building and using APIs on Linux](installation/apis-linux.md)
        * [Building and using APIs on Windows](installation/apis-windows.md)
        * [Building and using APIs on MacOS](installation/apis-mac.md)
+   * Using FreeLing
+       * [Test FreeLing installation on Linux](installation/test-linux.md)
+       * [Test FreeLing installation on Windows](installation/test-windows.md)
+       * [Test FreeLing installation on Mac](installation/test-mac.md)
 * [Linguistic Data Classes](language-classes.md)
 * [Language Processing Modules](processing-classes.md)
    * [Language Identifier](modules/lang_ident.md)
