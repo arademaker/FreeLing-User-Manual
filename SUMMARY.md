@@ -54,7 +54,7 @@
    * [Input/Output Formats](modules/io.md)
 * [Using the library from your own application](user-application.md)
 * [Adding Support for New Languages](new-languages.md)
-* [Using `analyzer` Program to Process Corpora](analyzer.md)
+* [Using analyzer Program to Process Corpora](analyzer.md)
 * [FreeLing Tagset Description](tagsets.md)
    * [(as) Asturian](tagsets/tagset-as.md)
    * [(ca) Catalan](tagsets/tagset-ca.md)
