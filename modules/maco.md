@@ -88,12 +88,12 @@ Class `maco_options` has convenience methods to set the values of the options, b
 Submodules called by the `maco` class are the following. 
 Note that any of them can be instantiated and used directly if needed.
 
-* [Punctuation Detection](modules/punct.md)
-* [Number Detection](modules/numbers.md)
-* [User Map Module](modules/usermap.md)
-* [Dates Detection](modules/dates.md)
-* [Dictionary Search](modules/dictionary.md)
-* [Multiword Recognition](modules/locutions.md)
-* [Named Entity Recognition](modules/ner.md)
-* [Quantity Recognition](modules/quantities.md)
-* [Probability Assignment and Guesser](modules/probabilities.md)
+* [Punctuation Detection](punct.md)
+* [Number Detection](numbers.md)
+* [User Map Module](usermap.md)
+* [Dates Detection](dates.md)
+* [Dictionary Search](dictionary.md)
+* [Multiword Recognition](locutions.md)
+* [Named Entity Recognition](ner.md)
+* [Quantity Recognition](quantities.md)
+* [Probability Assignment and Guesser](probabilities.md)
