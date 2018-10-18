@@ -29,7 +29,7 @@
        * [Rule-based Dependency Parser](modules/dep_txala.md)
        * [Statistical Dependency Parser](modules/dep_treeler.md)
        * [Neural Dependency Parser](modules/dep_lstm.md)
-   * [Semantic Role Labelling](modules/dep_treeler.md)
+   * [Semantic Role Labelling](modules/srl_treeler.md)
    * [Coreference Resolution](modules/coreference.md)
    * [Semantic Graph Extraction](modules/semgraph.md)
 * Other Useful modules

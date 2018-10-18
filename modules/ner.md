@@ -26,14 +26,15 @@ class ner {
 };
 ```
 
-The parameter to the constructor is the absolute name of a configuration file, which must contain the desired module type (`basic` or `bio`) in a line enclosed by the tags `<Type>` and `</Type>`.
+The parameter to the constructor is the absolute name of a configuration file, which must contain the desired module type (`basic`, `bio`, or `crf`) in a line enclosed by the tags `<Type>` and `</Type>`.
 
 The rest of the file must contain the configuration options specific for the selected NER type, described below.
 
 The `basic` module is simple and fast, and easy to adapt for use in new languages, provided capitalization is the basic clue for NE detection in the target language. The estimated performance of this module is about 85% correctly recognized named entities.
 
-The `bio`  module, is based on machine learning algorithms. It has a higher precision (over 90%), but it is remarkably slower than `basic`, and adaptation to new languages requires a training corpus plus some feature engineering.
+The `bio`  module, is based on Adaboost machine learning algorithm. It has a higher precision (over 90%), but it is remarkably slower than `basic`, and adaptation to new languages requires a training corpus plus some feature engineering.
 
+The `crf`  module, is based on Conditional Random Fields machine learning algorithm. It performs not only NE recognition but also classification. It has a higher precision (over 90% for both tasks combined). It is faster than `bio`, but not as fast as `basic`. Adaptation to new languages requires a training corpus plus some feature engineering. 
 
 
 ## Basic NER module (`np`) {#basic-ner-module-np}
@@ -66,6 +67,8 @@ class np: public ner_module, public automat {
 ```
 
 The file that controls the behaviour of the simple NE recognizer consists of the following sections:
+
+*   Section `<Type>` contains a single line with the word `basic`, specifying the type of NER module the rest of the file is intended for.
 
 *   Section `<FunctionWords>` lists the function words that can be embeeded inside a proper noun (e.g. preposisions and articles such as those in _Banco de España_ or _Foundation for the Eradication of Poverty_). For instance:
 
@@ -205,6 +208,9 @@ The most important file in the set is the `.rgf` file, which contains a definiti
 
 The sections of the configuration file for bioner module are:
 
+*   Section `<Type>` contains a single line with the word `bio`, specifying the type of NER module the rest of the file is intended for.
+
+
 *   Section `<RGF>` contains one line with the path to the RGF file of the model. This file is the definition of the features that will be taken into account for NER.
 
     ```XML
@@ -297,3 +303,71 @@ The sections of the configuration file for bioner module are:
 *   Section `<TitleLimit>` contains only one line with an integer value stating the length beyond which a sentence written _entirely_ in uppercase will be considered a title and not a proper noun.
 
     See description of the same option for `basic` named entity recognizer above.
+    
+    
+    
+    
+## CRF NERC module (`crf_nerc`) {#crf-nerc-module}
+
+The `crf_nerc` class provides a Conditional Random Field named entity recognizer and classifier.
+
+_IMPORTANT_ : This module performs NE recognition __and__ classification, so using [NEC module](nec.md) later will have no effect.
+
+It can be instantiated via the <tt>ner</tt> wrapper described above, or directly via its own API:
+
+```C++
+class crf_nerc : public ner_module {
+
+  public:
+    /// Constructor, receives the name of the configuration file.
+    crf_nerc(const std::wstring &);
+    /// Destructor
+    ~crf_nerc();
+
+    /// analyze given sentence.
+    void analyze(sentence &) const;
+
+    /// analyze given sentences.
+    void analyze(std::list<sentence> &) const;
+
+    /// return analyzed copy of given sentence
+    sentence analyze(const sentence &) const;
+
+    /// return analyzed copy of given sentences
+    std::list<sentence> analyze(const std::list<sentence> &) const;
+    
+  };
+```
+
+
+The configuration file sets the required model and feature extraction rules. Models are generated at traiing time, using CRFsuite.
+
+The sections of the configuration file for `crf_nerc` module are:
+
+*   Section `<Type>` contains a single line with the word `crf`, specifying the type of NER module the rest of the file is intended for.
+
+
+*   Section `<RGF>` contains one line with the path to the RGF file of the model. This file is the definition of the features that are known to the model.
+
+    ```XML
+    <RGF>
+    ner.rgf
+    </RGF>
+    ```
+
+*   Section `<ModelFile>` contains one line with the path to the CRF model file to be used. 
+
+    ```XML
+    <ModelFile>
+    nerc.crf
+    </ModelFile>
+    ```
+
+*   Section `<Classes>` contains one line with pairs `class tag` specifying which PoS tag must be assigned to NEs depending on the class produced by the CRF model
+
+    ```XML
+    <Classes>
+    PER NP00SP0 LOC NP00G00 ORG NP00O00 MISC NP00V00
+    </Classes>
+    ```
+    

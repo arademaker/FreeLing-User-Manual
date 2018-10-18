@@ -1,5 +1,5 @@
 
-# Depdendency Parsing {#dependency-parsing}
+# Dependency Parsing {#dependency-parsing}
 
 FreeLing includes several dependency parsers, build using different technologies.
 
