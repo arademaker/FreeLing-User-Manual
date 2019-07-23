@@ -1,6 +1,7 @@
-# FreeLing 4.0 User Manual
+# FreeLing 4.1 User Manual
 
-This book contains the user manual for FreeLing 4.0.
+This book contains the user manual for FreeLing 4.1.
+
 The online readable version can be found at [GitBook](https://www.gitbook.com/book/talp-upc/freeling-4-1-user-manual).
 The source code (markdown) of the book is located at [GitHub](https://github.com/TALP-UPC/FreeLing-User-Manual).
 
