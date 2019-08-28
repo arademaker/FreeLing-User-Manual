@@ -1,4 +1,4 @@
-# Summary
+# Table of Contents
 
 * [Introduction](README.md)
 * [Basic Concepts](basics.md)
