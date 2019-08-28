@@ -163,7 +163,7 @@ If you keep the source directories, you will be able to update to newer versions
  `cd mysrc`  
  `git pull`  
  `./configure`  
- `make`
+ `make`  
  `sudo make install`
 
 Depending on what changed in the repository, you may need to issue `autoreconf --install` after `git pull`. You may also need to issue `make distclean` and repeat the process from `./configure` onwards.
@@ -250,7 +250,7 @@ Then, you need to get FreeLing source, either from a tar file or from GitHub.
 *   Install `MacPorts` if you don't have it already
     * Download and install [MacPorts](http://www.macports.org/install.php)
     * Update and configure:  
-          sudo port -v selfupdate
+      `sudo port -v selfupdate`
 
 *   Use MacPorts to install required developer tools:  
     `sudo port install automake`  
