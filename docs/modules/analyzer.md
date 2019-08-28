@@ -1,4 +1,4 @@
-# Analyzer Metamodule {#analyzer-metamodule}
+# Analyzer Metamodule
 
 Although FreeLing is a toolbox with a variety of modules to pick and choose from for specific uses, most applications are likely to need a text analisys pipeline that goes from raw text to certain level of annotation.
 
@@ -59,7 +59,7 @@ Once the `analyzer` instance is created, a set of invocation options must be spe
 
 When invoke options are set, the `analyzer` meta-module can be called to process a plain text, or to enrich a partially analyzed document.
 
-## Analyzer configuration options {#analyzer-configuration-options}
+## Analyzer configuration options
 
 Class `analyzer::config_options` contains the configuration options that define which modules are active and which configuration files are loaded for each of them at construction time. Options in this set can not be altered once the analyzer is created. If an option has an empty value, the corresponding module will not be created (and thus it will not be possible to call it just altering `invoke_options` later)
 
@@ -116,7 +116,7 @@ class analyzer::config_options {
 };
 ```
 
-## Analyzer invocation options {#analyzer-invocation-options}
+## Analyzer invocation options
 
 Class `analyzer::invoke_options` contains the options that define the behaviour of each module in the analyze on the all subsequent analysis (until invoke options are changed again) Options in this set can be altered after construction (e.g. to activate/deactivate certain modules), as many times as needed.
 

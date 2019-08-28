@@ -1,5 +1,5 @@
 
-# Semantic Role Labelling Module {#semantic-role-labelling-module}
+# Semantic Role Labelling Module
 
 Semantic Role Labelling module is a machine-learning based classifier following the proposal by [\[LCM\]](../references.md).
 
@@ -32,7 +32,7 @@ The constructor for class `srl_treeler` expects a configuration file with the co
 The module can performs semantic role labelling (SRL), and requires that a dependency parsing has been already applied on the input sentences.
 
 
-## SRL Configuration File {#srl-configuration-file}
+## SRL Configuration File
 
 The configuration file for the semantic role labelling module has a single section `<SRL>`, containing keyword-value lines, which may be of 4 different types:
 

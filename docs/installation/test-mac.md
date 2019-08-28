@@ -16,4 +16,5 @@ Check FreeLing manual ([https://talp-upc.gitbooks.io/freeling-user-manual/](http
 Note that the input text in `myfile.txt` must be UTF8 encoded.  
 You can also provide input from the terminal and end it with ctl-D.
 
-See sections [Execute FreeLing demo](#execute-analyzer) and [Call FreeLing Library](#call-library) to find out more on how to use FreeLing.        
+See sections [Execute FreeLing demo](../analyzer.md) and [Call FreeLing Library](../user-application.md) to find out more on how to use FreeLing.   
+

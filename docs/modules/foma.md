@@ -1,5 +1,5 @@
 
-# Approximate search dictionary {#approximate-search-dictionary}
+# Approximate search dictionary
 
 This class wraps a <tt>libfoma</tt> FSM and allows fast retrieval of similar words via string edit distance based search.
 

@@ -3,7 +3,7 @@
 If you don't want to write Python or Java programs that call Freeling, you can skip this section.
 
 To be able to call FreeLing from Python or Java, you should have built it from source, using cmake options `-DPYTHON2_API`, `-DPYTHON3_API`, or `-DJAVA_API`, depending on your target.
-If you haven't see [Install from source on Linux](installation-windows.md) to find out how to do so.
+If you haven't seen [Install from source on Windows](installation-windows.md) to find out how to do so.
 
 Next sections assume you compiled and installed FreeLing with the appropriate APIs for your target language.
 ***IMPORTANT***: From this point on, we will refer to FreeLing installation folder (either chosen by you or the default location) as `%FLINSTALL%`.

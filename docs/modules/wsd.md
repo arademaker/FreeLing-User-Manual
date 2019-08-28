@@ -1,5 +1,5 @@
 
-# Word Sense Disambiguation Module {#word-sense-disambiguation-module}
+# Word Sense Disambiguation Module
 
 This module performs word-sense-disambiguation on content words in given sentences. This module is to be used if word sense disambiguation (WSD) is desired. If no disambiguation (or basic most-frequent-sense disambiguation) is needed, the [senses module](senses.md) is a lighter and faster option.
 

@@ -1,4 +1,4 @@
-# Number Detection Module {#number-detection-module}
+# Number Detection Module
 
 The number detection module is language dependent: It recognizes nummerical expression (e.g.: <tt>1,220.54</tt> or <tt>two-hundred sixty-five</tt>), and assigns them a normalized value as lemma.
 

@@ -1,6 +1,6 @@
 # Install FreeLing Requirements on Linux
 
-## Install development tools {#development-tools}
+## Install development tools
 
 * Install g++ and related packages.  
    Installing meta-package "build-essential" will do the trick in most distributions.  
@@ -11,7 +11,7 @@
    `sudo apt-get install cmake`  
    If your distro has a version older than 3.8, do not install it. Instead, download the binary package for linux from [https://cmake.org/download/](https://cmake.org/download/)
 
-## Install dependencies {#dependencies}
+## Install dependencies
 
 Some external libraries are required to compile FreeLing:
 
@@ -27,7 +27,7 @@ Some external libraries are required to compile FreeLing:
 
 If you are compiling FreeLing from source, you'll need to install **both** binary and development packages for all the libraries.
 
-#### Orientative package names {#orientative-package-names}
+#### Orientative package names
 
 The name of the packages containing the dependencies listed above vary depending on your linux distribution.
 

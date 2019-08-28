@@ -1,14 +1,14 @@
-# Linguistic Information Storage Classes {#linguistic-information-storage-classes}
+# Linguistic Information Storage Classes
 
 FreeLing library processes text and creates data structures that represent the linguistic objects in that text. Linguistic objects are elements like word, PoS-tag, sentence, parse_tree, etc.
 
 Thus, FreeLing processing modules are able to convert a text into a collection of linguistic objects.
 
-Processing modules typically receive some of these objects (e.g. a sentence, consisting of a list of words) and enrich it with additional information (e.g. adding PoS-tags to the words in the sentece, or a parse_tree to the sentence). Processing modules are described in section [Language Processing Modules](#language-processing-modules).
+Processing modules typically receive some of these objects (e.g. a sentence, consisting of a list of words) and enrich it with additional information (e.g. adding PoS-tags to the words in the sentece, or a parse_tree to the sentence). Processing modules are described in section [Language Processing Modules](processing-classes.md).
 
 This chapter describes the classes where all this linguistic information is stored by the processing modules. The application calling FreeLing can later access this data structures to retrieve the results of the analyzers.
 
-# Classes <tt>word</tt> and <tt>analysis</tt> {#classes-word-and-analysis}
+## Classes <tt>word</tt> and <tt>analysis</tt>
 
 The basic bricks of language are words, and this is the basic class that FreeLing uses to represent data.
 
@@ -222,7 +222,7 @@ class analysis {
   };
 ```
 
-# Class <tt>sentence</tt> {#class-sentence}
+## Class <tt>sentence</tt>
 
 Words are grouped to form sentences. A <tt>sentence</tt> is basically a list of <tt>word</tt> objects, but it also may contain additional information, such as a parse tree, a dependency tree, or a list of predicates and arguments.
 
@@ -299,7 +299,7 @@ Predicates contain the word that heads the predicate in the sentence (typically 
 
 Please check FreeLing Technical Reference Manual to find out details about the API for these classes.
 
-# Classes <tt>paragraph</tt> and <tt>document</tt> {#classes-paragraph-and-document}
+## Classes <tt>paragraph</tt> and <tt>document</tt> 
 
 Sentences can be grouped in <tt>paragraphs</tt>, and these can be grouped in a <tt>document</tt>
 

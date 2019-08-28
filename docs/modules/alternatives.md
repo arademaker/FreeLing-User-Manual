@@ -1,4 +1,4 @@
-# Alternative Suggestion Module {#alternatives-suggestion-module}
+# Alternative Suggestion Module
 
 This module is able to retrieve from its dictionary the entries most similar to the input form. The similarity is computed according to a configurable string edit distance (SED) measure.
 

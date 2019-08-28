@@ -9,7 +9,7 @@ If not, please read Section [Install FreeLing Requirements on Linux](requirement
 Finally, it assumes you know where you want to install FreeLing (e.g. `/home/user/freeling`, `/home/user/programs/freeling`). You can omit this, and FreeLing will be installed in the default location `/usr/local`.
 ***IMPORTANT***: From this point on, we will refer to FreeLing installation folder (either chosen by you or the default location) as `$FLINSTALL`.
 
-# Build FreeLing
+## Build FreeLing
 
 * Open a terminal and change to the folder where you uncompressed or cloned the downloaded FreeLing source.
 
@@ -45,11 +45,11 @@ Available options that can be added to the `cmake` command:
 |`-DPYTHON2_API=ON` | Build Python 2 API (default: `OFF`. See [Building and using APIs on Linux](apis-linux.md) for details).|
 |`-DPYTHON3_API=ON` | Build Python 3 API (default: `OFF`. See [Building and using APIs on Linux](apis-linux.md) for details).|
 
-# Test FreeLing
+## Test FreeLing
 After installing, you are ready to use FreeLing. See sections [Test FreeLing Installation on Linux](test-linux.md), [Execute FreeLing demo](#analyzer.md) and [Call FreeLing Library](apis-linux.md) to find out more on how to use FreeLing.     
 
 
-# Locale-related problems when installing {#locale-related-problems-when-installing}
+## Locale-related problems when installing
 
 If you get an error about `bad locale` when you enter `make install` or when you try to execute the `analyzer` sample program, you probably need to generate some locales in your system.
 
@@ -69,6 +69,6 @@ The procedure to install a locale in your system varies depending on your distri
   `dpkg-reconfigure locales`  
   and select the desired locales from the list.
 
-# Test FreeLing
+## Test FreeLing
 After installing, you are ready to use FreeLing. See sections [Test FreeLing Installation on Linux](test-linux.md), [Execute FreeLing demo](../analyzer.md) and [Call FreeLing Library](apis-linux.md) to find out more on how to use FreeLing.     
 

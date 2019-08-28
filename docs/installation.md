@@ -1,4 +1,4 @@
-# Getting it to work {#getting-it-to-work}
+# Getting it to work
 
 This chapter describes how to install and execute FreeLing. The steps to follow may be different depending on your needs and platform.
 
@@ -13,10 +13,11 @@ Here you'll find detailed instruction about each choice:
 
 Other issues you might be interested in;
 
-* [Calling FreeLing library from languages other than C++](#apis) 
-* [Reducing needed disk space](#reducing-disk)
+* [Calling FreeLing library from languages other than C++](#calling-freeling-library-from-languages-other-than-c) 
+* [Reducing needed disk space](#reducing-needed-disk-space)
+* [Executing FreeLing](#executing)
 
-## Calling FreeLing library from languages other than C++ {#apis}
+## Calling FreeLing library from languages other than C++
 
 FreeLing is written in C++, but it offers APIs to be called from Java, Python (2 and 3), or Perl, among others.
 
@@ -27,12 +28,11 @@ You'll find details about building and using the APIs in:
 
 * [Bulding and using APIs on Linux](installation/apis-linux.md)
 * [Bulding and using APIs on Windows](installation/apis-windows.md)
-* [Bulding and using APIs on Windows](installation/apis-mac.md)
+* [Bulding and using APIs on MacOS](installation/apis-mac.md)
 
 
 
-
-## Reducing needed disk space {#reducing-disk}
+## Reducing needed disk space
 
 
 FreeLing packages include linguistic data for all supported languages, which total up over 1Gb of disk space.
@@ -56,7 +56,7 @@ Where the folder `FREELINGDIR` is located, depends on which is your system and o
 * If you installed on Windows compiling from source, `FREELINGDIR` is the folder you used as `CMAKE_INSTALL_PREFIX`.  If you used the default installation, it is `C:\Program Files`.
 
 
-## Executing {#executing}
+## Executing
 
 FreeLing is a library, which means that it not a final-user oriented executable program but a tool to develop new programs that require linguistic analysis services.
 

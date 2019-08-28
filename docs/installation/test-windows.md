@@ -19,7 +19,7 @@ The script `analyze.bat` behaves just the Linux `analyze` script. Check FreeLing
 Note that the input text in `myfile.txt` must be UTF8 encoded. You can also provide input from the terminal and end it with ctl-Z.   
 Take into account windows command prompt is not UTF8, so you will find problems if you use non-ascii characters.
 
-See sections [Execute FreeLing demo](#execute-analyzer) and [Call FreeLing Library](#call-library) to find out more on how to use FreeLing.
+See sections [Execute FreeLing demo](../analyzer.md) and [Call FreeLing Library](../user-application.md) to find out more on how to use FreeLing.   
 
 
 ## Build your C++ program to call FreeLing

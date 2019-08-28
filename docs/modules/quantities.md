@@ -1,4 +1,4 @@
-# Quantity Recognition Module {#quantity-recognition-module}
+# Quantity Recognition Module
 
 The <tt>quantities</tt> class is an ATN that recognizes ratios, percentages, and physical or currency magnitudes (e.g. twenty per cent, 20%, one out of five, 1/5, one hundred miles per hour, etc.
 
@@ -31,7 +31,7 @@ class quantities {
 };
 ```
 
-## Quantity Recognition Data File {#quantity-recognition-data-file}
+## Quantity Recognition Data File
 
 This file contains the data necessary to perform currency amount and physical magnitude recognition. It consists of three sections: `<Currency>`, `<Measure>`, and `</MeasureNames>`.
 

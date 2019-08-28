@@ -1,5 +1,4 @@
-# Language Processing Modules {#language-processing-modules}
-
+# Language Processing Modules 
 This chapter describes each of the modules in FreeLing. For each module, its public API is described, as well as its main configuration options. Most modules can be customized via a configuration file.
 
 A typical module receives a list of sentences, and enriches them with new linguistic information (morphological analysis, disambiguation, parsing, etc.)

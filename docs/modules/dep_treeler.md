@@ -1,5 +1,5 @@
 
-# Statistical Dependency Parser and Semantic Role Labelling Module {#statistical-dependency-parser-and-semantic-role-labelling-module}
+# Statistical Dependency Parser and Semantic Role Labelling Module
 
 As an alternative to rule-based Txala dependency parser, a statistical dependency parsing module is also available. 
 It is based on [Treeler](http://devel.cpl.upc.edu/treeler) machine learning library.
@@ -33,7 +33,7 @@ class dep_treeler : public dependency_parser {
 The constructor for class `dep_treeler` expects a configuration file with the contents described below.
 
 
-## Statistical Parser Configuration File {#statistical-parser-configuration-file}
+## Statistical Parser Configuration File
 
 The configuration file for the statistical dependency parser and semantic role labelling module has a single section `<Dependencies>`, containing two lines, with a keyword and a value each:
 

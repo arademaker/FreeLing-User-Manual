@@ -1,5 +1,5 @@
 
-# Neural Dependency Parser {#neural-dependency-parser}
+# Neural Dependency Parser
 
 As an alternative to rule-based Txala dependency parser and `dep_treeler` statistical parser, a neural-network based dependency parsing module is also available. 
 It is based on the LSTM parser proposed by [\[DBL+15\]](../references.md).
@@ -28,7 +28,7 @@ class dep_lstm : public dependency_parser {
 };
 ```
 
-## Neural Parser Configuration File {#neural-parser-configuration-file}
+## Neural Parser Configuration File
 
 The constructor for class `dep_lstm` expects a configuration file, which is created by the training scripts. 
 Attempts to customize it will result in a poor performance.

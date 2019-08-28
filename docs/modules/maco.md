@@ -1,5 +1,5 @@
 
-# Morphological Analyzer Module {#morphological-analyzer-module}
+# Morphological Analyzer Module
 
 The morphological analyzer is a meta-module which does not perform any processing of its own.
 

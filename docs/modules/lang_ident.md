@@ -1,5 +1,5 @@
 
-# Language Identifier Module {#language-identifier-module}
+# Language Identifier Module
 
 This module is somehow different of the other modules, since it doesn't enrich the given text. It compares the given text with available models for different languages, and returns the most likely language the text is written in. It can be used as a preprocess to determine which data files are to be used to analyze the text.
 
@@ -48,7 +48,7 @@ The same `lang_ident` class may be used to train models for new languages. A pla
 
 The constructor expects a configuration file name, containing information about where are the language models located, and some parameters. The contents of that file are described below.
 
-## Language Identifier Options File {#language-identifier-options-file}
+## Language Identifier Options File
 
 The language identifier options file has a unique section `<Languages>` closed by tag `</Languages>`.
 

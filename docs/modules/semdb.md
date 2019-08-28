@@ -1,5 +1,5 @@
 
-# Semantic Database Module {#semantic-database-module}
+# Semantic Database Module
 
 This module is not a main processor in the default analysis chain, but it is used by the other modules that need access to the semantic database: The sense annotator <tt>senses</tt>, the word sense disambiguator <tt>ukb_wrap</tt>, the dependency parser <tt>dep_txala</tt>, and the coreference solver <tt>coref</tt>.
 
@@ -50,7 +50,7 @@ The constructor receives a configuration file, with the following contents:
     `wnFile` is a file stating hyperonymy relations and other semantic information for each sense. The format is described below.  
     `formDictFile` may be needed if mapping rules in `<WNPosMap>` require it. It is a regular form dictionary file with morphological information, as described in section [Dictionary Search](dictionary.md).
 
-## PoS mapping rules {#pos-mapping-rules}
+## PoS mapping rules
 
 Each line in section `<WNPosMap>` defines a mapping rule, with format  
 `FreeLing-PoS WN-PoS search-key`  
@@ -84,7 +84,7 @@ VMP a VMP00SM
 ```
 which states that for words with FreeLing tags starting with `N`, `A`, `R`, and `V`, lemma will be searched in wordnet with PoS `n`, `a`, `r`, and `v` respectively. It also states that words with tag starting with `VMP` (e.g. _cansadas_) must be searched as adjectives (`a`) using the form for the same lema (i.e. _cansar_) that matches the tag `VMP00SM` (resulting in _cansado_). This is useful to have participles searched as adjectives, since FreeLing Spanish dictionary doesn't contain any participle as adjective, but esWN does.
 
-## Sense Dictionary File {#sense-dictionary-file}
+## Sense Dictionary File
 
 This source file (e.g. `senses30.src` provided with FreeLing) must contain the word list for each synset, one entry per line. 
 Each line has format:   
@@ -99,7 +99,7 @@ Words in the line can be multiwords, provided they are lowercased and glued togh
 
 
 
-## WordNet file {#wordnet-file}
+## WordNet file
 
 This source file (e.g. `wn30.src` provided with FreeLing) must contain at each line the information relative to a sense, with the following format:  
 `sense hypern:hypern:...:hypern  semfile  TopOnto:TopOnto:...:TopOnto  sumo  cyc`

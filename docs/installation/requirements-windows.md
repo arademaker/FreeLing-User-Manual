@@ -1,18 +1,18 @@
 # Install FreeLing Requirements on Windows
 
-## Install development tools {#development-tools}
+## Install development tools
 
 * Install MSVC (MS Visual Studio, with C++ compiler)
 
 * Install CMake (3.8 or newer) using installer available at [https://cmake.org/download/](https://cmake.org/download/)
 
-## Install dependencies {#dependencies}
+## Install dependencies
 
 Some external libraries are required to compile FreeLing.
 Next sections describe how to install them. Some can be installed from binary packages, others have to be compiled.
 
 ***IMPORTANT***:  All sections below assume that you decided where you will install FreeLing  (e.g. `C:\FreeLing`, `C:\Program Files\FreeLing`, etc.) and will install the dependencies in the same place.
- You can install the dependencies anywhere else, but then you'll need to adjust the paths used in this installation guide. See [Install dependencies in a different folder](#dependencies-location) for details.
+ You can install the dependencies anywhere else, but then you'll need to adjust the paths used in this installation guide. See [Install dependencies in a different folder](#installing-dependencies-in-a-different-folder) for details.
 
 For short, we will refer to this installation folder as `%FLINSTALL%`.
 
@@ -65,7 +65,7 @@ Now you can continue to section [Install from source on Windows](installation-wi
 
 
 
-## Installing dependencies in a different folder {#dependencies-location}
+## Installing dependencies in a different folder
 
 You can install zlib, boost, and icu anywhere (that is, they don't *have* to be in `%FLINSTALL%\dependencies`).
 

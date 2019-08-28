@@ -1,4 +1,4 @@
-# Part-of-Speech Tagger Module {#part-of-speech-tagger-module}
+# Part-of-Speech Tagger Module
 
 There are two different modules able to perform PoS tagging. The application should decide which method is to be used, and instantiate the right class.
 
@@ -75,7 +75,7 @@ The `hmm_tagger` constructor receives the following parameters:
 *   An integer stating how many best tag sequences the tagger must try to compute. If not specified, this parameter defaults to 1. Since a sentence may have less possible tag sequences than the given _k_ value, the results may contain a number of sequences smaller than _k_.
 
 
-### HMM-Tagger Parameter File {#hmm-tagger-parameter-file}
+### HMM-Tagger Parameter File
 
 This file contains the statistical data for the Hidden Markov Model, plus some additional data to smooth the missing values. Initial probabilities, transition probabilities, lexical probabilities, etc.
 
@@ -216,7 +216,7 @@ The `relax_tagger` constructor receives the following parameters:
 The iteration number, scale factor, and threshold parameters are very specific of the relaxation labelling algorithm. Refer to [\[Pad98\]](../references.md) for details.
 
 
-### Relaxation-Labelling Constraint Grammar File {#relaxation-labelling-constraint-grammar-file}
+### Relaxation-Labelling Constraint Grammar File
 
 The syntax of the file is based on that of Constraint Grammars [\[KVHA95\]](../references.md), but simplified in many aspects, and modified to include weighted constraints.
 
@@ -224,7 +224,7 @@ An initial file based on statistical constraints may be generated from a tagged 
 
 The file consists of two sections: `SETS` and `CONSTRAINTS`.
 
-#### Set definition {#set-definition}
+#### Set definition
 
 The `SETS` section consists of a list of set definitions, each of the form:  
 `Set-name = element1 element2 ... elementN;`
@@ -245,7 +245,7 @@ Animal = [00008019] [00862484] [00862617] [00862750] [00862871] [00863425]
          [01813568] [01883430] [01947400] [07400072] [07501137];
 ```
 
-#### Constraint definition {#constraint-definition}
+#### Constraint definition
 
 The `CONSTRAINTS` section consists of a series of context constraits, each of the form:   
 `weight core context;`  
@@ -281,7 +281,7 @@ Conditions may be negated using the token not, i.e.
 
 Note that the use of sense information in the rules of the constraint grammar (either in the core or in the context) only makes sense when this information distinguishes one analysis from another. If the sense tagging has been performed with the option `DuplicateAnalysis=no`, each PoS tag will have a list with all analysis, so the sense information will not distinguish one analysis from the other (there will be only one analysis with that sense, which will have at the same time all the other senses as well). If the option `DuplicateAnalysis` was active, the sense tagger duplicates the analysis, creating a new entry for each sense. So, when a rule selects an analysis having a certain sense, it is unselecting the other copies of the same analysis with different senses.
 
-### Examples {#examples}
+### Examples
 
 The next constraint states a high incompatibility for a word being a definite determiner (`DA*`) if the next word is a personal form of a verb (`VMI*`):   
 ```

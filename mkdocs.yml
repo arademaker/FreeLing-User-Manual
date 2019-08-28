@@ -1,1 +1,11 @@
-site_name: My Docs
+site_name: FreeLing User Manual
+copyright: TALP Research Center - Universitat Politècnica de Catalunya
+nav:
+    - Home: intro.md
+    - Index: index.md
+    
+
+markdown_extensions:
+    - toc:
+        permalink: 
+        baselevel: 2

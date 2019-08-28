@@ -9,7 +9,7 @@ If not, please read Section [Install FreeLing Requirements on MacOS](requirement
 Finally, it assumes you know where you want to install FreeLing (e.g. `/Users/myself/freeling`, `/Users/myself/programs/freeling`, etc.). You can omit this, and FreeLing will be installed in the default location `/usr/local`.
 ***IMPORTANT***: From this point on, we will refer to FreeLing installation folder (either chosen by you or the default location) as `$FLINSTALL`.
 
-# Build FreeLing
+## Build FreeLing
 
 * Open a terminal and change to the folder where you uncompressed or cloned the downloaded FreeLing source.
 
@@ -41,12 +41,12 @@ Available options that can be added to the `cmake` command:
 |`-DWARNINGS=OFF`   | Build FreeLing without warning messages (default: `ON`)|
 |`-DXPRESSIVE=ON`   |  Build FreeLing using boost::xpressive regexps instead of boost::regex (default: `OFF`) |
 |`-DEMBEDDINGS=ON`  | Download word embeddings files when installing (default: `OFF`). Warning: Adds 2Gb to required installation space. |
-| `-DJAVA_API=ON`   | Build Java API (default: `OFF`. See [Building and using APIs on Linux](apis-linux.md) for details). |
-|`-DPYTHON2_API=ON` | Build Python 2 API (default: `OFF`. See [Building and using APIs on Linux](apis-linux.md) for details).|
-|`-DPYTHON3_API=ON` | Build Python 3 API (default: `OFF`. See [Building and using APIs on Linux](apis-linux.md) for details).|
+| `-DJAVA_API=ON`   | Build Java API (default: `OFF`. See [Building and using APIs on MacOS](apis-mac.md) for details). |
+|`-DPYTHON2_API=ON` | Build Python 2 API (default: `OFF`. See [Building and using APIs on MacOs](apis-mac.md) for details).|
+|`-DPYTHON3_API=ON` | Build Python 3 API (default: `OFF`. See [Building and using APIs on MacOS](apis-mac.md) for details).|
 
 
-# Test FreeLing
+## Test FreeLing
 After installing, you are ready to use FreeLing. See sections [Test FreeLing Installation on Mac](test-mac.md), [Execute FreeLing demo](../analyzer.md) and [Call FreeLing Library](apis-mac.md) to find out more on how to use FreeLing.     
 
 
