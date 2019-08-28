@@ -1,0 +1,14 @@
+(as) Asturian
+(ca) Catalan
+(cy) Welsh
+(de) German
+(en) English
+(es) Spanish
+(fr) French
+(gl) Galician
+(hr) Croatian
+(it) Italian
+(nb) Norwegian
+(pt) Portuguese
+(ru) Russian
+(sl) Slovene
