@@ -1,5 +1,5 @@
 
-# Using <tt>analyzer</tt> Program to Process Corpora {#using-analyzer-program-to-process-corpora}
+# Using ``analyzer`` Program to Process Corpora 
 
 The simplest way to use the FreeLing libraries is via the provided `analyzer` main program, which allows the user to process an input text to obtain several linguistic processings.
 
@@ -15,7 +15,7 @@ The `analyzer` program provides also a server mode (use option `-server`) which 
 
 The `analyze` (no final "<tt>r</tt>") script described below handles all these default paths and variables and makes everything easier if you want to use the defaults.
 
-## The easy way: Using the <tt>analyze</tt> script {#the-easy-way-using-the-analyze-script}
+## The easy way: Using the ``analyze`` script 
 
 To ease the invocation of the program, a script named `analyze` (no final "<tt>r</tt>") is provided. This is script is able to locate default configuration files, define library search paths, and handle whether you want the client-server or the straight version.
 
@@ -34,7 +34,7 @@ If `-f config-file` is specified but not found in the current directory, it will
 Extra options may be specified in the command line to override any settings in `config-file`. See section [Valid Options](#valid-options).
 
 
-### Stand-alone mode {#stand-alone-mode}
+### Stand-alone mode 
 
 The default mode will launch a stand-alone analyzer, which will load the configuration, read input from stdin, write results to stdout, and exit. E.g.:
 
@@ -43,7 +43,7 @@ The default mode will launch a stand-alone analyzer, which will load the configu
 When the input file ends, the analyzer will stop and it will have to be reloaded again to process a new file.
 
 
-### Client/server mode {#client-server-mode}
+### Client/server mode 
 
 If `--server` and `--port` options are specified, a server will be launched which starts listening for incoming requests. E.g.:
 
@@ -64,7 +64,7 @@ The server will fork a new process to attend each new client, so you can have ma
 You can control the maximum amount of clients being attended simutaneously (in order to prevent a flood in your server) with the option `--workers`. You can control the size of the queue of pending clients with option `--queue`. Clients trying to connect when the queue is full will receive a connection error. See section [Valid Options](#valid-options) for details on these options.
 
 
-## Using a threaded analyzer {#using-a-threaded-analyzer}
+## Using a threaded analyzer 
 
 If `libboost_thread` is installed, the installation process will build the program `threaded_analyzer`. 
 This program behaves like `analyzer`, and has almost the same options.
@@ -76,7 +76,7 @@ Although it is intended mainly as an example for developers wanting to build the
 Nevertheless, notice that this example program does not include modules that are not token- or sentence-oriented, namely, language identification and coreference resolution.
 
 
-# Usage example {#usage-example}
+# Usage example 
 
 Assuming we have the following input file `mytext.txt`:
 
@@ -161,7 +161,7 @@ Alternatively, if we don't want to repeat the first steps that we had already pe
 See options `InputLevel`, `OutputLevel`, `InputFormat`, and `OutputFormat` in section [Valid options](#valid-options) for details on which are valid input and output levels and formats.
 
 
-## Configuration File and Command Line Options {#configuration-file-and-command-line-options}
+## Configuration File and Command Line Options 
 
 Almost all options may be specified either in the configuration file or in the command line, having the later precedence over the former.
 
@@ -171,7 +171,7 @@ FreeLing package includes default configuration files. They can be found at the 
 
 
 ----------------------------------
-### Valid Options {#valid-options}
+### Valid Options 
 
 This section presents the options that can be given to the <tt>analyzer</tt> program (and thus, also to the <tt>analyzer_server</tt> program and to the <tt>analyze</tt> script). All options can be written in the configuration file as well as in the command line. The later has always precedence over the former.
 
@@ -861,7 +861,7 @@ Configuration file for coreference resolution module.
 
 
 
-### Sample Configuration File {#sample-configuration-file}
+### Sample Configuration File 
 
 A sample configuration file follows. You can start using freeling with the default configuration files which are installed at `/usr/local/share/freeling/config` (note than prefix `/usr/local` may differ if you specified an alternative location when installing FreeLing. If you installed from a binary `.deb` package), it will be at `/usr/share/freeling/config`.
 

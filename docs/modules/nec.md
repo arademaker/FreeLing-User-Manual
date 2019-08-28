@@ -1,5 +1,5 @@
 
-# Named Entity Classification Module {#named-entity-classification-module}
+# Named Entity Classification Module 
 
 The mission of the Named Entity Classification module is to assing a class to named entities in the text. It is a Machine-Learning based module, so the classes can be anything the model has been trained to recognize.
 
@@ -39,7 +39,7 @@ class nec {
 
 The constructor receives one parameter with the name of the configuration file for the module. Its content is described below.
 
-## NEC Data File {#nec-data-file}
+## NEC Data File 
 
 The machine-learning based Named Entity Classification module reads a configuration file with the following sections
 

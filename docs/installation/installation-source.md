@@ -1,4 +1,4 @@
-# Installing from source {#install-from-source}
+# Installing from source 
 
 Unless you have a special interest in compiling FreeLing, [installing it from a binary package](installation-packages.md) is recommended.
 

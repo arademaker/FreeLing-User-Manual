@@ -1,5 +1,5 @@
 
-# Feature Extraction Module {#feature-extraction-module}
+# Feature Extraction Module 
 
 Machine Learning based modules (such as BIO named entity recognition or classification modules) require the encoding of each word to classify as a feature vector. The conversion of words in a sentence to feature vectors, is performed by this module. The features are task-oriented, so they vary depending on what is being classified. For this reason, the encoding is not hard-wired in the code, but dinamically performed interpreting a set of feature rules.
 
@@ -52,7 +52,7 @@ The constructor of the class receives a `.rgf` file containing feature extractio
 
 If the lexicon file name is empty, features will be assigned an integer code, and the generated lexicon can be saved. This is useful when encoding training corpus and feature codes have not been set yet.
 
-## Feature Extraction Rule File {#feature-extraction-rule-file}
+## Feature Extraction Rule File 
 
 Feature extraction rules are defined in a `.rgf` file. This section describes the format of the file. The syntax of the rules is described further below.
 
@@ -82,7 +82,7 @@ will generate, for each word, features indicating which words in the surrounding
 
 With this rule applied to the sentence "_Hi ! , said John ._" the word _said_ would get the features `punct_mark@-1` (comma to the left of _said_), `punct_mark@-2` (exclamation mark), and `punct_mark@2` (dot after _John_). The word _John_ would get the features `punct_mark@-2` and `punct_mark@1`. Since the package has condition `ALL`, the features are computed once per word, and then reused (that is, the fact that the comma is a punctuation sign will be checked only once, regardless of the size of the sentence and the size of the windows in the rules).
 
-## Rule Syntax {#rule-syntax}
+## Rule Syntax 
 
 Each rule has following syntax:  
 `feature-name-pattern window condition`
@@ -91,7 +91,7 @@ Each rule has following syntax:
 *   `window` is a range in the format `[num,num]`, and states the words around the target word for which the feature has to be computed. A window of `[0,0]` means that the feaure is only checked for the target word.
 *   `condition` is the condition that a word has to satisfy in order to get the features extracted by the rule. Details on condition sintax are provided below.
 
-## Feature Name Pattern Syntax {#feature-name-pattern-syntax}
+## Feature Name Pattern Syntax 
 
 Each feature rule has a `feature-name-pattern` that describes how the generated feature name will be.
 
@@ -116,7 +116,7 @@ The following characters are special and are interpreted as variables, and repla
     2.  If the brackets do not contain a regex match variable, then the content is interpreted as call to a custom feature function. It must have the format `{functname(position)}`, where `functname` is the name of the function as declared in the custom feature functions map (see below), and the `position` parameter is the relative position to the target word, and is interpreted in the same way than in the primitive features `$w(position)`, `$t(position)`, etc., described above.   
         E.g., the pattern: `{quoted(-1)}_{quoted(0)}` would generate a feature similar to that of the pattern: `t(-1)_t(0)` but using the result of the custom function `quoted` instead of the PoS tag for the corresponding word.
 
-## Feature Rules Condition Syntax {#feature-rules-condition-syntax}
+## Feature Rules Condition Syntax 
 
 Conditions control the applicability of a rule or a rule package to a certain word.
 
@@ -154,7 +154,7 @@ Some sample valid conditions:
 *   `l !in_set my/data/files/badlemmas.dat`   true if selected lemma for the word is not found in the given file.
 *   `w matches ...$`   Always true. Will set the match variable `$0` to the last three characters of the word, so it can be used in the feature name pattern (e.g. to generate a feature with the suffix of each word).
 
-## Adding custom feature functions {#adding-custom-feature-functions}
+## Adding custom feature functions 
 
 Custom feature functions can be defined, and called from the `.rgf` file enclosed in curly brackets (e.g.: `{quoted(0)}`). Calls to custom feature functions in the `.rgf` file must have one integer parameter, indicating a word position relative to the target word.
 

@@ -1,4 +1,4 @@
-# Splitter Module {#splitter-module}
+# Splitter Module 
 
 The splitter module receives lists of <tt>word</tt> objects (either produced by the tokenizer or by any other means in the calling application) and buffers them until a sentence boundary is detected. Then, a list of <tt>sentence</tt> objects is returned.
 
@@ -47,7 +47,7 @@ class splitter {
 };
 ```
 
-## Splitter Options File {#splitter-options-file}
+## Splitter Options File 
 
 The splitter options file contains four sections: `<General>`, `<SentenceEnd>`, `<SentenceStart>`, and `<Markers>`.
 

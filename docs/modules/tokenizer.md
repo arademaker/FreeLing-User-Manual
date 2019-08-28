@@ -1,4 +1,4 @@
-# Tokenizer Module {#tokenizer-module}
+# Tokenizer Module 
 
 The first module in the processing chain is the tokenizer. It converts plain text to a vector of <tt>word</tt> objects, according to a set of tokenization rules.
 
@@ -32,7 +32,7 @@ class tokenizer {
 
 That is, once created, the tokenizer module receives plain text in a string, tokenizes it, and returns a list of <tt>word</tt> objects corresponding to the created tokens
 
-## Tokenizer Rules File {#tokenizer-rules-file}
+## Tokenizer Rules File 
 
 The tokenizer rules file is divided in three sections `<Macros>`, `<RegExps>` and `<Abbreviations>`. Each section is closed by `</Macros>`, `</RegExps>` and `</Abbreviations>` tags respectively.
 

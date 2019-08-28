@@ -1,4 +1,4 @@
-# Chart Parser Module {#chart-parser-module}
+# Chart Parser Module 
 
 The chart parser enriches each `sentence` object with a `parse_tree` object, whose leaves have a link to the sentence words.
 
@@ -31,7 +31,7 @@ The constructor receives a file with the CFG grammar to be used by the parser. S
 
 The method `get_start_symbol` returns the initial symbol of the grammar, and is needed by the [dependency parser](dep_txala.md).
 
-## Shallow Parser CFG file {#shallow-parser-cfg-file}
+## Shallow Parser CFG file 
 
 This file contains a CFG grammar for the chart parser, and some directives to control which chart edges are selected to build the final tree. Comments may be introduced in the file, starting with ``%'', the comment will finish at the end of the line.
 

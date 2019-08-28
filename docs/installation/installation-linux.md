@@ -49,7 +49,7 @@ Available options that can be added to the `cmake` command:
 After installing, you are ready to use FreeLing. See sections [Test FreeLing Installation on Linux](test-linux.md), [Execute FreeLing demo](#analyzer.md) and [Call FreeLing Library](apis-linux.md) to find out more on how to use FreeLing.     
 
 
-# Locale-related problems when installing {#locale-related-problems-when-installing}
+# Locale-related problems when installing 
 
 If you get an error about `bad locale` when you enter `make install` or when you try to execute the `analyzer` sample program, you probably need to generate some locales in your system.
 

@@ -1,4 +1,4 @@
-# Installing from binary packages {#install-from-binary-packages}
+# Installing from binary packages 
 
 This installation procedure is the fastest and easiest. If you do not plan to modify the code, this is the option you should take.
 
@@ -7,7 +7,7 @@ Binary packages are available only for stable FreeLing versions. If you want to 
 You'll find downloadable binary packages in [GitHub FreeLing Releases page](https://github.com/TALP-UPC/FreeLing/releases).
 Packages for several Debian/Ubuntu versions are provided, as well as for MS-Windows.
 
-## Install binary package on Linux {#install-package-linux}
+## Install binary package on Linux 
 
 Most debian-based systems will launch the apropriate installer if you just double click on the package file. The installer should solve the dependencies and install all required packages.
 
@@ -26,7 +26,7 @@ In other distributions, package names may differ.  You will  find further inform
 
 After installing, you are ready to use FreeLing. See sections [Test FreeLing Installation on Linux](test-linux.md), [Execute FreeLing demo](#analyzer.md) and [Call FreeLing Library](apis-linux.md) to find out more on how to use FreeLing.        
   
-## Install binary package on MS-Windows {#install-package-windows}
+## Install binary package on MS-Windows 
 
 Get the zipfile `freeling-4.1-win.zip` from [GitHub FreeLing Releases page](https://github.com/TALP-UPC/FreeLing/releases) and uncompress it in a folder of your choice.
 

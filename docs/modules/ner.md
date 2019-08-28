@@ -1,4 +1,4 @@
-# Named Entity Recognition Module {#named-entity-recognition-module}
+# Named Entity Recognition Module 
 
 There are two different modules able to perform NE recognition. They can be instantiated directly, or via a wrapper that will create the right module depending on the configuration file.
 
@@ -36,7 +36,7 @@ The `bio`  module, is based on machine learning algorithms. It has a higher prec
 
 
 
-## Basic NER module (`np`) {#basic-ner-module-np}
+## Basic NER module (`np`) 
 
 The first NER module is the `np` class, which is a just an ATN that basically detects sequences of capitalized words, taking into account some functional words (e.g. _Bank of England_) and capitalization at sentence begginings.
 
@@ -171,7 +171,7 @@ The file that controls the behaviour of the simple NE recognizer consists of the
     Obviously this heuristic is not 100% accurate, but in some cases (e.g. if you are analyzing newspapers) it may be preferrable to the default behaviour (which is not 100% accurate, either).
 
 
-## BIO NER module (<tt>bioner</tt>) {#bio-ner-module-bioner}
+## BIO NER module (<tt>bioner</tt>) 
 
 The machine-learning based NER module uses a classification algorithm to decide whether each word is at a NE begin (<tt>B</tt>), inside (<tt>I</tt>) or outside (<tt>O</tt>). Then, Viterbi algorithm is applied to guarantee sequence coherence.
 

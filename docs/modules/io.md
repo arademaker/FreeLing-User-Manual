@@ -1,5 +1,5 @@
 
-# Input/Output handling modules {#input-output-handling-modules}
+# Input/Output handling modules 
 
 FreeLing package includes a few classes that can convert between FreeLing analyzed documents and an output representantion. New classes can be created by the user to meet specific needs.
 
@@ -56,7 +56,7 @@ class output_handler {
 };
 ```
 
-## Output handlers {#output-handlers}
+## Output handlers 
 
 Currently, the following output handlers are implemented. All of them are derived from `output_handler`.
 
@@ -901,7 +901,7 @@ class output_train : public output_handler {
 ```
 
 
-## Input handlers {#output-handlers}
+## Input handlers 
 
 Currently, the following output handlers are implemented. All of them are derived from `input_handler`.
 

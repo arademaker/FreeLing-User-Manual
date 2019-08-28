@@ -1,5 +1,5 @@
 
-# RelaxCor Coreference Resolution Module {#relaxcor-coreference-resolution-module}
+# RelaxCor Coreference Resolution Module 
 
 This module offers coreference resolution capabilities.
 

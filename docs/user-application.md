@@ -1,4 +1,4 @@
-# Using the library from your own application {#using-the-library-from-your-own-application}
+# Using the library from your own application 
 
 The library may be used to develop your own NLP application (e.g. a machine translation system, an intelligent indexation module for a search engine, etc.)
 
@@ -6,7 +6,7 @@ To achieve this goal you have to link your application to the library, and acces
 Since the library is C++, using C++ in your program provides full access to all library functionalities.
 However, quite complete APIs are provided for Java, Perl, Python, PHP, and Ruby.
 
-## Basic Classes {#basic-classes}
+## Basic Classes 
 
 This section briefs the basic C++ classes any application needs to know. 
 For detailed API definition, consult the technical documentation in <tt>doc/html</tt> and <tt>doc/latex</tt> directories, or chapters about [Linguistic Data Classes](language-classes.md) or [Language Processing Modules](processing-classes.md)
@@ -48,7 +48,7 @@ You may create as many instances of each as you need. Constructors for each of t
 
 
 
-## Sample programs {#sample-programs}
+## Sample programs 
 
 The directory `src/main/simple_examples` in the tarball contains some example programs to illustrate how to call the library.
 

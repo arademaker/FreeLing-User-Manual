@@ -1,4 +1,4 @@
-# Phonetic Encoding Module {#phonetic-encoding-module}
+# Phonetic Encoding Module 
 
 The phonetic encoding module enriches words with their [SAMPA phonetic codification](http://www.phon.ucl.ac.uk/home/sampa).
 

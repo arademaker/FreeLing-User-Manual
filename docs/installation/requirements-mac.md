@@ -1,7 +1,7 @@
 # Install FreeLing Requirements on MacOS
 
 
-## Install development tools {#development-tools}
+## Install development tools 
 
 MacOS development tools can be easily installed. Open a terminal, and write the command:
   `xcode-select --install`  

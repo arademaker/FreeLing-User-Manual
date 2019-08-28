@@ -1,4 +1,4 @@
-# Linguistic Information Storage Classes {#linguistic-information-storage-classes}
+# Linguistic Information Storage Classes 
 
 FreeLing library processes text and creates data structures that represent the linguistic objects in that text. Linguistic objects are elements like word, PoS-tag, sentence, parse_tree, etc.
 
@@ -8,15 +8,15 @@ Processing modules typically receive some of these objects (e.g. a sentence, con
 
 This chapter describes the classes where all this linguistic information is stored by the processing modules. The application calling FreeLing can later access this data structures to retrieve the results of the analyzers.
 
-# Classes <tt>word</tt> and <tt>analysis</tt> {#classes-word-and-analysis}
+# Classes ``word`` and ``analysis`` 
 
 The basic bricks of language are words, and this is the basic class that FreeLing uses to represent data.
 
-Class <tt>word</tt> can store the form of a word (so, how it was written in the text), its phonetic encoding, and other information about it.
+Class ``word`` can store the form of a word (so, how it was written in the text), its phonetic encoding, and other information about it.
 
 Many words are ambiguous with respect to their Part-of-Speech. For instance, the English word *bit* may be either a noun (a small piece of something) or a verb (past tense of verb *to bite*). Often, these different PoS tags are associated to different lemmas (e.g. *bit* for the noun reading and *bite* for the verb interpretation).
 
-Thus, class <tt>word</tt> also stores a list of <tt>analysis</tt> objects. Every <tt>analysis</tt> is basically a combination of one lemma and one PoS tag. Analysis also may contain other information such as a list of senses, a probability, etc.
+Thus, class ``word`` also stores a list of ``analysis`` objects. Every ``analysis`` is basically a combination of one lemma and one PoS tag. Analysis also may contain other information such as a list of senses, a probability, etc.
 
 The word also stores information about which analysis were selected by the tagger, whether the word is a multiword made by the agglutination of several input tokens, etc. It also offers iterators to traverse the list of analysis of the word, either all of them, or only the subset selected (or non-selected) by the tagger.
 
@@ -172,7 +172,7 @@ class word : public std::list<analysis> {
   };
 ```
 
-Since a large amount of useful information about the word is stored in the analysis it contains, the class <tt>analysis</tt> also offers methods to access its content:
+Since a large amount of useful information about the word is stored in the analysis it contains, the class ``analysis`` also offers methods to access its content:
 
 ```C++
 class analysis {
@@ -222,9 +222,9 @@ class analysis {
   };
 ```
 
-# Class <tt>sentence</tt> {#class-sentence}
+# Class ``sentence`` 
 
-Words are grouped to form sentences. A <tt>sentence</tt> is basically a list of <tt>word</tt> objects, but it also may contain additional information, such as a parse tree, a dependency tree, or a list of predicates and arguments.
+Words are grouped to form sentences. A ``sentence`` is basically a list of ``word`` objects, but it also may contain additional information, such as a parse tree, a dependency tree, or a list of predicates and arguments.
 
 ```C++
 class sentence : public std::list<word> {
@@ -299,9 +299,9 @@ Predicates contain the word that heads the predicate in the sentence (typically 
 
 Please check FreeLing Technical Reference Manual to find out details about the API for these classes.
 
-# Classes <tt>paragraph</tt> and <tt>document</tt> {#classes-paragraph-and-document}
+# Classes ``paragraph`` and ``document`` 
 
-Sentences can be grouped in <tt>paragraphs</tt>, and these can be grouped in a <tt>document</tt>
+Sentences can be grouped in ``paragraphs``, and these can be grouped in a ``document``
 
 ```C++
 class paragraph : public std::list<sentence> {
@@ -313,11 +313,11 @@ class paragraph : public std::list<sentence> {
   };
 ```
 
-Class <tt>document</tt> is able to contain a sequence of <tt>paragraphs</tt>, each containing several <tt>sentences</tt>, each of which is made of <tt>words</tt> that have different <tt>analysis</tt>.
+Class ``document`` is able to contain a sequence of ``paragraphs``, each containing several ``sentences``, each of which is made of ``words`` that have different ``analysis``.
 
-In addition, a <tt>document</tt> may contain also information about the coreference of different mentions in the text referring to the same entity, and provides methods to access this information.
+In addition, a ``document`` may contain also information about the coreference of different mentions in the text referring to the same entity, and provides methods to access this information.
 
-Please check FreeLing Technical Reference Manual to find out details about the API for class <tt>mention</tt>.
+Please check FreeLing Technical Reference Manual to find out details about the API for class ``mention``.
 
 ```C++
 class document : public std::list<paragraph> {
@@ -365,11 +365,11 @@ class document : public std::list<paragraph> {
   };
 ```
 
-Finally, the <tt>document</tt> may contain also a semantic graph describing relations between entities and events.
+Finally, the ``document`` may contain also a semantic graph describing relations between entities and events.
 
-The graph contains instances of <tt>SG_entity</tt> (an entity mentioned in the text, one or more times) and <tt>SG_frame</tt> (an event, relation or action described in the text). Objects of class <tt>SG_frame</tt> contain <tt>SG_argument</tt> instances that describe which entities are involved in that event.
+The graph contains instances of ``SG_entity`` (an entity mentioned in the text, one or more times) and ``SG_frame`` (an event, relation or action described in the text). Objects of class ``SG_frame`` contain ``SG_argument`` instances that describe which entities are involved in that event.
 
-Please check FreeLing Technical Reference Manual to find out details about the API for classes contained in the <tt>semgraph</tt>.
+Please check FreeLing Technical Reference Manual to find out details about the API for classes contained in the ``semgraph``.
 
 ```C++
 class semantic_graph {
