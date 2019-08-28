@@ -78,7 +78,7 @@ If that doesn't work, you can install it by hand (in Ubuntu or Debian) with the 
 
     In a Debian system, the above commands must be issued as root and without `sudo`.
 
-### Install from <tt>.tar.gz</tt> source packages
+### Install from ``.tar.gz`` source packages
 
 Installation from source follows standard GNU autoconfigure installation procedures (that is, the usual `./configure && make && make install` stuff).
 
@@ -119,7 +119,7 @@ Installing from source is slower and harder, but it will work in any Linux box, 
 
     See `./configure --help` for options about installing in non-default directories or disabling some FreeLing options.
 
-### Install from <tt>GitHub</tt> repositories
+### Install from ``GitHub`` repositories
 
 Installing from GitHub is very similar to installing from source, but you'll have the chance to easily update your FreeLing to the latest development version.
 
