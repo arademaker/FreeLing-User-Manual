@@ -5,7 +5,7 @@ This chapter describes how to install and execute FreeLing. The setps to follow 
 * [Requirements](#requirements)
 * Installation
    * [Install from <tt>.deb</tt> binary packages](#install-from-deb-binary-packages)
-   * [Install from <tt>.tar.gz</tt> source packages](#install-from-tar-gz-source-packages)
+   * [Install from <tt>.tar.gz</tt> source packages](#install-from-targz-source-packages)
    * [Install from <tt>GitHub</tt> repositories](#install-from-github-repositories)
 * [Reducing needed disk space](#reducing-needed-disk-space)
 * [Locale-related problems when installing](#locale-related-problems-when-installing)
