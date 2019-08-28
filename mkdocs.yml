@@ -1,9 +1,8 @@
 site_name: FreeLing User Manual
 copyright: TALP Research Center - Universitat Politècnica de Catalunya
 nav:
-    - Home: intro.md
-    - Index: index.md
-    
+    - Home: index.md
+    - Index: toc.md
 
 markdown_extensions:
     - toc:
