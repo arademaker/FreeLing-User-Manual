@@ -1,5 +1,5 @@
 
-# Semantic Graph Extractor Module {#semantic-graph-extractor-module}
+# Semantic Graph Extractor Module 
 
 This module will combine the information provided by the parser, the SRL, and the coreference resolution modules, and build a semantic graph encoding which events are described in the text, which are the relations between them, and which are the actors participating in those events.
 

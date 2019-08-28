@@ -1,4 +1,4 @@
-# Multiword Recognition Module {#multiword-recognition-module}
+# Multiword Recognition Module 
 
 This module aggregates input tokens in a single word object if they
 are found in a given list of multiwords.
@@ -36,7 +36,7 @@ Class `automat` implements a generic ATN. The `locutions` class is a
 derived class which implements an ATN to recognize the word patterns
 listed in the file given to the constructor.
 
-## Multiword Definition File {#multiword-definition-file}
+## Multiword Definition File 
 
 The file contains a list of multiwords to be recognized.
 

@@ -1,4 +1,4 @@
-#Basic Concepts {#basic-concepts}
+# Basic Concepts
 
 FreeLing is a C++ library providing language analysis services (such as morphological analysis, date recognition, PoS tagging, parsing, etc.)
 
@@ -8,7 +8,7 @@ FreeLing is designed to be used as an external library from any application requ
 
 Additionally, a command-line main program with many customization options is also provided as a basic interface to the library, enabling the user to analyze text files with no need of coding any programs to call the library.
 
-  ##What is FreeLing {#what-is-freeling}
+## What is FreeLing
 
 FreeLing is a developer-oriented library providing language analysis services. If you want to develop, say, a machine translation system, and you need some kind of linguistic processing of the source text, your MT application can call FreeLing modules to do the required analysis.
 
@@ -16,7 +16,7 @@ In the directory `src/main/simple_examples` in FreeLing tarball, some sample pro
 
 In the directory `src/main/sample_analyzer` a couple of more complex programs are provided, which can be used either as a command line interface to the library to process texts, or as examples of how to build customized applications using FreeLing.
 
-  1 ## What is NOT FreeLing {#what-is-not-freeling}
+## What is NOT FreeLing
 
 FreeLing is not a user-oriented text analysis tool. That is, it is not designed to be user friendly, to have a fancy GUI, or to output results with a cute image, or in a certain format.
 
@@ -28,7 +28,7 @@ This program offers a set of options that cover most of FreeLing capabilities. N
 
 FreeLing library also includes some classes that are able to dump FreeLing data tructures into some common formats, such as XML or CoNLL-like column format. These classes are limited and may not be able to generate any desired output format as they are out-of-the box, but can be adjusted to your needs or used as a starting poit to write your own dumper to your preferred output format.
 
-## Supported Languages {#supported-languages}
+## Supported Languages
 
 The current version supports the following languages(to different extents and accuracy levels, see table below): Asturian (as), Catalan (ca), German (de), English (en), French (fr), Galician (gl), Croatian (hr), Italian (it), Norwegian (nb), Portuguese (pt), Russian (ru), Slovene (sl), Spanish (es), and Welsh (cy).
 
@@ -66,7 +66,7 @@ See the [Linguistic Data](http://nlp.lsi.upc.edu/freeling/linguistic-data) secti
 
 See file [<tt>COPYING</tt>](https://github.com/TALP-UPC/FreeLing/blob/master/COPYING) in the distribution packages to find out the license of each third-party linguistic resource included in FreeLing packages.
 
-## License {#license}
+## License
 
 FreeLing code is licensed under Affero GNU General Public License ([AGPL](http://www.gnu.org/licenses/agpl.html)).
 
@@ -74,7 +74,7 @@ The linguistic data collections are distributed under diverse licenses, dependin
 
 Find the details in the [<tt>COPYING</tt>](https://github.com/TALP-UPC/FreeLing/blob/master/COPYING) file in the tarball, or in the [License](http://nlp.lsi.upc.edu/freeling/node/6) section in [FreeLing webpage](http://nlp.lsi.upc.edu/freeling).
 
-## Contributions {#contributions}
+## Contributions
 
 FreeLing is developed and maintained by people in [TALP Research Center](http://www.talp.upc.edu) at Universitat Politecnica de Catalunya.
 

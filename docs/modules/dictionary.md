@@ -1,5 +1,5 @@
 
-# Dictionary Search Module {#dictionary-search-module}
+# Dictionary Search Module 
 
 The dictionary search module has two functions: Search the word forms in the dictionary to find out their lemmas and PoS tags, and apply affixation or compounding rules to find the same information in the cases in which the form is a derived form not included in the dictionary (e.g. the word *quickly* may not be in the dictionary, but a suffixation rule may state that removing suffix *-ly* and searching for the obtained adjective is a valid way to form and adverb).
 
@@ -77,7 +77,7 @@ The dictionary content may be updated online using the methods `add_analysis` an
 
 The dictionary module behaviour may be tuned on-the-fly with the methods `set_affix_analysis`, `set_retokenize_contractions`, and `set_compound_analysis`, which will activate (when parameter is <tt>true</tt>) or deactivate (when <tt>false</tt>) the specified feature for any further call to the `analyze` methods.
 
-## Form Dictionary File {#form-dictionary-file}
+## Form Dictionary File 
 
 The form dictionary contais two required sections: `<IndexType>` and `<Entries>`
 
@@ -115,7 +115,7 @@ The contraction entries in the dictionary are intended for inambiguous contracti
 
 An optional parameter in the constructor enables to control whether contractions are splitted by the dictionary module itself (thus passing two words instead of one to later modules) or the decision is left to later modules (which will receive a single word carrying retokenization information).
 
-## Affixation Rules File {#affixation-rules-file}
+## Affixation Rules File 
 
 The submodule of the dictionary handler that deals with affixes requires a set of affixation rules.
 
@@ -165,7 +165,7 @@ vi ver VMIS1S0
 les ellos PP3CPD00
 ```
 
-## Compound rules file {#compound-rules-file}
+## Compound rules file 
 
 The dictionary may be configured to check whether a word is a compound formed by the concatenation of several dictionary words.
 
@@ -189,7 +189,7 @@ There are two possible formats for specifying a pattern:
 
 For flexibility, in any of both rule formats, a wildcard `*` may be used instead of a PoS prefix, causing that part of the pattern to match any PoS tag.
 
-## Dictionary Management {#dictionary-management}
+## Dictionary Management 
 
 In many NLP applications you want to deal with text in a particular domain, which contain words or expressions (terminology, proper nouns, etc.) that are specific or have a particular meaning in that domain.
 

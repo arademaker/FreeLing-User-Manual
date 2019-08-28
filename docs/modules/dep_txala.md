@@ -1,5 +1,5 @@
 
-# Rule-based Dependency Parser Module {#rule-based-dependency-parser-module}
+# Rule-based Dependency Parser Module 
 
 The Txala dependency parser [\[ACM05\]](../references.md) gets constituency parsed sentences -that is, `sentence` objects which have been enriched with a `parse_tree` by the `chart_parser` (or by any other means).  The input parsing may be shallow. The dependency parser will complete the parse tree if needed, convert it to a dependency tree, and assign a syntactic function to each edge in the dependency tree.
 
@@ -33,13 +33,13 @@ The dependency parser works in three stages:
 The syntax and semantics of `<GRPAR>` and `<GRLAB>` rules are described below.
 
 
-## Dependency Parsing Rule File {#dependency-parsing-rule-file}
+## Dependency Parsing Rule File 
 
 The dependency rules file contains a set of rules to perform dependency parsing.
 
 The file consists of five sections: sections: `<GRPAR>`, `<GRLAB>`, `<SEMDB>`, `<CLASS>`, and `<PAIRS>`.
 
-### Parse-tree completion rules {#parse-tree-completion-rules}
+### Parse-tree completion rules 
 
 Section `<GRPAR>` contains rules to complete the partial parsing provided by the chart parser. The tree is completed by combining chunk pairs as stated by the rules. Rules are applied from highest priority (lower values) to lowest priority (higher values), and left-to right. That is, the pair of adjacent chunks matching the most prioritary rule is found, and the rule is applied, joining both chunks in one. The process is repeated until only one chunk is left.
 
@@ -133,7 +133,7 @@ After applying the rule, the flag `PH2` will be toggled on, and the flags `INIT`
 The only predefined flag is `INIT`, which is toggled on when the parsing starts. The grammarian can define any alphanumerical string as a flag, simply toggling it on in some rule.
 
 
-### Dependency function labeling rules {#dependency-function-labeling-rules}
+### Dependency function labeling rules 
 
 Labelling rules defined in section `<GRLAB>` are applied once the tree has been completed and converted to a dependency tree. 
 For each edge in the tree, the first matching rule is located and applied.
@@ -219,7 +219,7 @@ First rule above states that a `noun-phr` daughter under a `verb-phr` parent wil
 
 The second rule states that a `pp` daughter under a `verb-phr` parent will be labeled as `loc` if it is to the right of its parent, the preposition heading the `pp` is `in` or `at`, and the pair formed by the verb lemma and the noun heading the noun phrase inside the `pp` is found in the `location` pair class (which should be defined in section `<PAIRS>` as described below).
 
-### Semantic database location {#semantic-database-location}
+### Semantic database location 
 
 Section `<SEMDB>` is only necessary if the dependency labeling rules in section `<GRLAB>` use conditions on semantic values (that is, any of `tonto`, `semfile`, `synon`, or `asynon`). Since it is needed by `<GRLAB>` rules, section `<SEMDB>` must be defined before section `<GRLAB>`. The section must contain a single line specifying a configuration file for a semanticDB object. The filename may be absolute or relative to the location of the dependency rules file.
 ```XML
@@ -229,7 +229,7 @@ Section `<SEMDB>` is only necessary if the dependency labeling rules in section 
 ```
 The configuration file must follow the format described in section [Semantic Database](semdb.md).
 
-### Class definitions {#class-definitions}
+### Class definitions 
 
 Section `<CLASS>` contains class definitions which may be used as attributes in the dependency labelling rules.
 
@@ -253,7 +253,7 @@ animal "animals.dat"
 </CLASS>
 ```
 
-### Pair-class definitions {#pair-class-definitions}
+### Pair-class definitions 
 
 Section `<PAIRS>` contains class definitions of compatible pairs. They can be used as attributes in the tree-completing rules.
 

@@ -1,5 +1,5 @@
 
-# Tag Set Managing Module {#tag-set-managing-module}
+# Tag Set Managing Module 
 
 This module is able to store information about a tagset, and offers some useful functions on PoS tags and morphological features.
 
@@ -52,7 +52,7 @@ The class constructor receives a file name with a tagset description. Format of 
 3.  Given a list of pairs feature-value for morphological attributes, return a PoS tag encoding those properties.
 
 
-## Tagset Description File {#tagset-description-file}
+## Tagset Description File 
 
 Tagset description file has two sections: `<DecompositionRules>` and `<DirectTranslations>`, which describe how tags are converted to their short version and decomposed into morphological feature-value pairs
 

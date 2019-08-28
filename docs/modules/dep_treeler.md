@@ -1,5 +1,5 @@
 
-# Statistical Dependency Parser and Semantic Role Labelling Module {#statistical-dependency-parser-and-semantic-role-labelling-module}
+# Statistical Dependency Parser and Semantic Role Labelling Module 
 
 As an alternative to rule-based Txala dependency parser, a statistical dependency parsing module is also available. 
 It is based on [Treeler](http://devel.cpl.upc.edu/treeler) machine learning library.
@@ -37,7 +37,7 @@ The module can perform not only dependency parsing, but also semantic role label
 The configuration file establishes whether both tasks are performed, or just dependency parsing.
 
 
-## Statistical Parser and SRL Configuration File {#statistical-parser-and-srl-configuration-file}
+## Statistical Parser and SRL Configuration File 
 
 The configuration file for the statistical dependency parser and semantic role labelling module has two main sections: `<Dependencies>` and `<SRL>`. Each section establishes the configuration and parameters of the corresponding subtask. Section `<Dependencies>` is required, but section `<SRL>` may be ommitted if no SRL is required.
 

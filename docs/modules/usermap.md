@@ -1,5 +1,5 @@
 
-# User Map Module {#user-map-module}
+# User Map Module 
 
 The user map module assigns Part-of-Speech tags to words matching a given regular expression. It can be used to customize the behaviour of the analysis chain to specific applications, or to process domain-specific special tokens.
 
@@ -35,7 +35,7 @@ Note also that if you introduce in this file PoS-tags which are not in the tagse
 
 Finally, note that this module sequentially checks each regular expression in the list against each word in the text. Thus, it should be used for patterns (not for fixed strings, which can be included in a dictionary file), and with moderation: using a very long list of expressions may severely slow down your analysis chain.
 
-## User Map File {#user-map-file}
+## User Map File 
 
 The format of the file containing the user map from regular expression to pairs lemma-PoS is one regular expression per line, each line with the format: <tt>regex lemma1 tag1 lemma2 tag2 ...</tt>.
 

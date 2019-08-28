@@ -1,4 +1,4 @@
-# Dates Detection Module {#dates-detection-module}
+# Dates Detection Module 
 
 The dates detection module, as the number detection module, is a collection of language-specific Augmented Transition Networks, and for this reason needs no data file to be provided at instantiation time.
 

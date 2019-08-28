@@ -1,4 +1,4 @@
-# Getting it to work {#getting-it-to-work}
+# Getting it to work
 
 This chapter describes how to install and execute FreeLing. The setps to follow may be differnt depending on your needs and platform.
 
@@ -7,15 +7,15 @@ This chapter describes how to install and execute FreeLing. The setps to follow 
    * [Install from <tt>.deb</tt> binary packages](#install-from-deb-binary-packages)
    * [Install from <tt>.tar.gz</tt> source packages](#install-from-tar-gz-source-packages)
    * [Install from <tt>GitHub</tt> repositories](#install-from-github-repositories)
-* [Reducing needed disk space](#reducing-disk)
+* [Reducing needed disk space](#reducing-needed-disk-space)
 * [Locale-related problems when installing](#locale-related-problems-when-installing)
 * [Installing on MacOS](#installing-on-macos)
 * [Executing](#executing)
 * [Porting to other platforms](#porting-to-other-platforms)
-* [APIs for languages other than C++](#apis-other-languages)
+* [APIs for languages other than C++](#apis-for-languages-other-than-c)
 
 
-## Requirements {#requirements}
+## Requirements
 
 To install FreeLing you'll need:
 
@@ -35,7 +35,7 @@ To install FreeLing you'll need:
     *   <tt>libz</tt> compression library. Included in all Linux distributions. You probably do not have all neeeded components installed. Make sure to install both runtime and development packages for:
         *   zlib
 
-### Orientative package names {#orientative-package-names}
+### Orientative package names
 
 The name of the packages containing the dependencies listed above vary depending on your linux distribution.
 
@@ -51,11 +51,11 @@ Note that you need to install both the binary libraries and the development pack
 
 See details on the installation procedure in section [Installation](#installation).
 
-## Installation {#installation}
+## Installation
 
 This section provides a detailed guide on different options to install FreeLing (and all its required packages).
 
-### Install from <tt>.deb</tt> binary packages {#install-from-deb-binary-packages}
+### Install from ``.deb`` binary packages
 
 This installation procedure is the fastest and easiest. If you do not plan to modify the code, this is the option you should take.
 
@@ -78,7 +78,7 @@ If that doesn't work, you can install it by hand (in Ubuntu or Debian) with the 
 
     In a Debian system, the above commands must be issued as root and without `sudo`.
 
-### Install from <tt>.tar.gz</tt> source packages {#install-from-tar-gz-source-packages}
+### Install from <tt>.tar.gz</tt> source packages
 
 Installation from source follows standard GNU autoconfigure installation procedures (that is, the usual `./configure && make && make install` stuff).
 
@@ -119,7 +119,7 @@ Installing from source is slower and harder, but it will work in any Linux box, 
 
     See `./configure --help` for options about installing in non-default directories or disabling some FreeLing options.
 
-### Install from <tt>GitHub</tt> repositories {#install-from-github-repositories}
+### Install from <tt>GitHub</tt> repositories
 
 Installing from GitHub is very similar to installing from source, but you'll have the chance to easily update your FreeLing to the latest development version.
 
@@ -168,7 +168,7 @@ If you keep the source directories, you will be able to update to newer versions
 
 Depending on what changed in the repository, you may need to issue `autoreconf --install` after `git pull`. You may also need to issue `make distclean` and repeat the process from `./configure` onwards.
 
-## Reducing needed disk space {#reducing-disk}
+## Reducing needed disk space
 
 FreeLing packages include linguistic data for all supported languages, which total up over 1Gb of disk space.
 
@@ -182,7 +182,7 @@ It is possible to safely remove data for languages that are not needed, saving t
      * After removing the unneeded directories, install normaly.
 
 
-## Locale-related problems when installing {#locale-related-problems-when-installing}
+## Locale-related problems when installing
 
 If you get an error about <tt>bad locale</tt> when you enter `make install` or when you try to execute the `analyzer` sample program, you probably need to generate some locales in your system.
 
@@ -202,7 +202,7 @@ The procedure to install a locale in your system varies depending on your distri
     `dpkg-reconfigure locales`   
     and select the desired locales from the list.
 
-## Installing on MacOS {#installing-on-macos}
+## Installing on MacOS
 
 Installing on MacOS is very similar to installing on Linux. The main difference is how to install the dependencies and required development tools, which is greatly eased by MacPorts or Homebrew (you only need one of them, not both).
 
@@ -270,7 +270,7 @@ Then, you need to get FreeLing source, either from a tar file or from GitHub.
 
     You can add to `configure` any extra options you wish (`-enable-traces`, `-prefix`, etc). Use `./configure --help` to find out available options.
 
-## Executing {#executing}
+## Executing
 
 FreeLing is a library, which means that it not a final-user oriented executable program but a tool to develop new programs that require linguistic analysis services.
 
@@ -284,7 +284,7 @@ Thus, the question is not *why this program doesn't offer functionality X?*, *wh
 
 In the directory `src/main/simple_examples` in the tarball, you can find simpler sample programs that illustrate how to call the library, and that can be used as a starting point to develop your own application.
 
-## Porting to other platforms {#porting-to-other-platforms}
+## Porting to other platforms
 
 FreeLing library is entirely written in C++, so it is possible to compile it on non-unix platforms with a reasonable effort.
 
@@ -295,7 +295,7 @@ Binary packages for Windows can be found in [GitHub FreeLing Releases page](http
 
 You can visit the [Forum](http://nlp.lsi.upc.edu/freeling/forum) in FreeLing webpage for further help and details.
 
-## APIs for languages other than C++ {#apis-other-languages}
+## APIs for languages other than C++
 
 To call FreeLing library from a language different than C++ you will need to build the appropriate API.
 

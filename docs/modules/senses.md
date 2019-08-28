@@ -1,4 +1,4 @@
-# Sense Labelling Module {#sense-labelling-module}
+# Sense Labelling Module 
 
 This module searches the lemma of each analysis in a sense dictionary, and enriches the analysis with the list of senses found there.
 

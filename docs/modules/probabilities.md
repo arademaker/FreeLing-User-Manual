@@ -1,4 +1,4 @@
-# Probability Assignment and Unknown Word Guesser Module {#probability-assignment-and-unknown-word-guesser-module}
+# Probability Assignment and Unknown Word Guesser Module 
 
 This class ends the morphological analysis subchain, and has two functions: first, it assigns an a priori probability to each analysis of each word. These probablities will be needed for the PoS tagger later. Second, if a word has no analysis (none of the previously applied modules succeeded to analyze it), this module tries to guess which are its possible PoS tags, based on the word ending.
 
@@ -36,7 +36,7 @@ The constructor receives:
 *   The probabilities file name: The file that contains all needed configuration and statistical information. This file can be generated from a tagged training corpus using the scripts in `src/utilities/train-tagger`. Its format is described below.
 *   A threshold: This is used for unknown words, when the probability of each possible tag has been estimated by the guesser according to word endings, tags with a value lower than this threshold are discarded.
 
-## Lexical Probabilities File {#lexical-probabilities-file}
+## Lexical Probabilities File 
 
 This file can be generated from a tagged corpus using the training script provided in FreeLing package, located at `src/utilities/train-tagger/bin/TRAIN.sh`.
 

@@ -1,4 +1,4 @@
-# Punctuation Detection Module {#punctuation-detection-module}
+# Punctuation Detection Module 
 
 The punctuation detection module assigns Part-of-Speech tags to punctuation symbols. The API of the class is the following:
 
@@ -26,7 +26,7 @@ The constructor receives as parameter the name of a file containing the list of 
 
 Note that this module will be applied afer the tokenizer, so, it will only annotate symbols that have been separated at the tokenization step. For instance, if you include the three suspensive dots (...) as a single punctuation symbol, it will have no effect unless the tokenizer has a rule that causes these substring to be tokenized in one piece.
 
-## Punctuation Tags File {#punctuation-tags-file}
+## Punctuation Tags File 
 
 The format of the file listing the PoS for punctuation symbols is one punctuation symbol per line, each line with the format: <tt>punctuation-symbol lemma tag</tt>. E.g.:
 
