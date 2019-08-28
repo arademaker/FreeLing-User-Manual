@@ -136,19 +136,19 @@ Installing from GitHub is very similar to installing from source, but you'll hav
 
 *   Checkout FreeLing sources
 
-   If you want the latest development version, do:  
-    `git clone https://github.com/TALP-UPC/FreeLing.git mysrc`
+     If you want the latest development version, do:  
+     `git clone https://github.com/TALP-UPC/FreeLing.git mysrc`
 
-    (you can replace `mysrc` with the directory name of your choice).
+     (you can replace `mysrc` with the directory name of your choice).
 
-    If you want a previous release, after cloning the repository with the above command, you can checkout any previous tagged version with something like:  
-    `git checkout -b mybranch-v4 4.0-beta1`
+     If you want a previous release, after cloning the repository with the above command, you can checkout any previous tagged version with something like:  
+     `git checkout -b mybranch-v4 4.0-beta1`
 
-    (that will create a new branch `mybranch-v4` in your local repository that will contain the version tagged as `4.0-beta1` in GitHub).
+     (that will create a new branch `mybranch-v4` in your local repository that will contain the version tagged as `4.0-beta1` in GitHub).
 
-    You can find out the available tags at [https://github.com/TALP-UPC/freeling](https://github.com/TALP-UPC/freeling).
+     You can find out the available tags at [https://github.com/TALP-UPC/freeling](https://github.com/TALP-UPC/freeling).
 
-    Versions older than 4.0 are available at the [old SVN repository](http://devel.cpl.upc.edu/freeling/svn/versions)
+     Versions older than 4.0 are available at the [old SVN repository](http://devel.cpl.upc.edu/freeling/svn/versions)
     
 *   Prepare local repositories for compilation  
      `cd mysrc`  
