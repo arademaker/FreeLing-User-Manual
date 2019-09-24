@@ -15,7 +15,7 @@ Finally, it assumes you know where you want to install FreeLing (e.g. `C:\FreeLi
 
 2. From the start menu, open a "Visual Studio x64 Native Tools Command Prompt" (or "x86" if your system is 32 bits)
 
-3. Change to the folder where you unzipped the source, and execute the commands:
+3. Change to the folder where you unzipped the source, and execute the commands:  
    ```
    mkdir build
    cd build
