@@ -13,7 +13,7 @@ Finally, it assumes you know where you want to install FreeLing (e.g. `/Users/my
 
 * Open a terminal and change to the folder where you uncompressed or cloned the downloaded FreeLing source.
 
-* Execute the commands:
+* Execute the commands:  
   ```
   mkdir build
   cd build
