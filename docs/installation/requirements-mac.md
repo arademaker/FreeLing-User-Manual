@@ -20,6 +20,6 @@ Go to https://brew.sh and follow the instructions there to install it.
   `brew install cmake`  
 
 * Install boost and icu libraries:  
-  `brew install boost --with-icu4c`  
+  `brew install boost 
 
 
