@@ -21,7 +21,7 @@ Finally, it assumes you know where you want to install FreeLing (e.g. `/Users/my
   make install
   ```
   This will install FreeLing in `/usr/local`.  
-  
+
 You can speed up compilation using several processors with, e.g.,  `make -j 4 install` (you can replace `4` with the number of processors you want to use).
   
 To change the destination directory, add option `-DCMAKE_INSTALL_PREFIX=$FLINSTALL` to the `cmake` command (where `$FLINSTALL` is the path where you want to install FreeLing).
@@ -41,7 +41,8 @@ Available options that can be added to the `cmake` command:
 |`-DWARNINGS=OFF`   | Build FreeLing without warning messages (default: `ON`)|
 |`-DXPRESSIVE=ON`   |  Build FreeLing using boost::xpressive regexps instead of boost::regex (default: `OFF`) |
 |`-DEMBEDDINGS=ON`  | Download word embeddings files when installing (default: `OFF`). Warning: Adds 2Gb to required installation space. |
-| `-DJAVA_API=ON`   | Build Java API (default: `OFF`. See [Building and using APIs on MacOS](apis-mac.md) for details). |
+|`-DJAVA_API=ON`    | Build Java API (default: `OFF`. See [Building and using APIs on MacOS](apis-mac.md) for details). |
+|`-DJAVA_HOME=<path>`  | Java installation folder, in case cmake fails to find it. |
 |`-DPYTHON2_API=ON` | Build Python 2 API (default: `OFF`. See [Building and using APIs on MacOs](apis-mac.md) for details).|
 |`-DPYTHON3_API=ON` | Build Python 3 API (default: `OFF`. See [Building and using APIs on MacOS](apis-mac.md) for details).|
 

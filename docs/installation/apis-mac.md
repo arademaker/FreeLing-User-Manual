@@ -28,6 +28,7 @@ If you want to call FreeLing library from Python or Java, you need to install so
    `-DPYTHON2_API=ON`  \(if you want to build Python 2 API. Not compatible with `-DPYTHON3_API`\)  
    `-DPYTHON3_API=ON`  \(if you want to build Python 3 API. Not compatible with `-DPYTHON2_API`\)  
    `-DJAVA_API=ON`     \(if you want to build Java API\)
+   `-DJAVA_HOME=<path>`  \(use this to specify location of your JDK if cmake fails to find it\)
 
 
 ## PYTHON
@@ -37,7 +38,7 @@ If you built the Python2 (or Python3 API), you'll find in `$FLINSTALL/share/free
 | File | Content |
 | --- | --- |
 | `pyfreeling.py` | FreeLing python module, to be imported from your program.<br>It must be in the same folder than your program or in a folder included in `$PYTHONPATH`.|
-| `_pyfreeling.dylib` | This file is the actual API DLL, bridging between Python and C++.<br>It must be in the same folder than your program, or in a folder included in `$LD_LIBRARY_PATH`. |
+| `_pyfreeling.dylib` | This file is the actual API DLL, bridging between Python and C++.<br>It must be in the same folder than your program, or in a folder included in `$DYLD_LIBRARY_PATH`. |
 | `sample.py` | An example of a python program that calls FreeLing. |
 
 To run the example, do:
@@ -46,9 +47,9 @@ To run the example, do:
    python sample.py < mytext.txt
 ```
 
-* If you get "ImportError" about not found modules, you need to set `$LD_LIBRARY_PATH` so all the required libraries (freeling and all its dependencies) are found, as well as the `_pyfreeling.so` API library (you need to do this only once per session, or you can set it once and forever in your system-wide configuration):
+* If you get "ImportError" about not found modules, you need to set `$DYLD_LIBRARY_PATH` so all the required libraries (freeling and all its dependencies) are found, as well as the `_pyfreeling.so` API library (you need to do this only once per session, or you can set it once and forever in your system-wide configuration):
   ```
-  export LD_LIBRARY_PATH=$FLINSTALL/lib;$FLINSTALL/share/freeling/APIs/python2
+  export DYLD_LIBRARY_PATH=$FLINSTALL/lib;$FLINSTALL/share/freeling/APIs/python2
   ```
 
 * If you get "FREELINGDIR not defined", you need to set the location where FreeLing was installed:
@@ -65,7 +66,7 @@ If you built the Java API, you'll find in `$FLINSTALL/share/freeling/APIs/java` 
 | File | Content |
 | --- | --- |
 | Jfreeling.jar | FreeLing Java module, to be imported from your program.<br>It must be included in `$CLASSPATH`. |
-| libJfreeling.dylib | The actual API, bridging between Java and C++.<br>It must be in the same folder than your program or in a folder included in `LD_LIBRARY_PATH` |
+| libJfreeling.dylib | The actual API, bridging between Java and C++.<br>It must be in the same folder than your program or in a folder included in `DYLD_LIBRARY_PATH` |
 | Analyzer.java | An example of a Java program that calls FreeLing. |
 
 To run the example, do:
@@ -77,7 +78,7 @@ To run the example, do:
 
 * If you get "UnsatisfiedLinkError" about not found libraries, you need to set `$LS_LIBRARY_PATH` so all the required libraries (freeling and all its dependencies, as well as `libJfreeling.so`) are found (you need to do this only once per session, or you can set it once and forever in your system-wide configuration):
   ```
-  export LD_LIBRARY_PATH=$FLINSTALL/lib;$FLINSTALL/share/freeling/APIs/java
+  export DYLD_LIBRARY_PATH=$FLINSTALL/lib;$FLINSTALL/share/freeling/APIs/java
   ```
 
 * If you get "FREELINGDIR not defined", you need to set the location where reeLing was installed:
