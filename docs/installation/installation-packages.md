@@ -40,9 +40,11 @@ The main package includes only the linguistic data for English, Spanish, and Por
 
 ## Install binary package on MS-Windows 
 
-Get the zipfile `freeling-4.2-win.zip` from [GitHub FreeLing Releases page](https://github.com/TALP-UPC/FreeLing/releases) and uncompress it in a folder of your choice.
+Get the zipfile `winfreeling-4.2.zip` from [GitHub FreeLing Releases page](https://github.com/TALP-UPC/FreeLing/releases) and uncompress it in a folder of your choice. Check the README.txt inside the zipfile.
 
-The zipfile already includes all third-party dependencies required by FreeLing (if you are curious you can find out how to install them yourself in section [Install from source on Windows](installation-windows.md) ).
+Get the zipfile `winfreeling-4.2-dependencies.zip` and uncompress it in the same folder. Check the README.txt inside the zipfile.
+
+If you want support for languages other than English, Spanish, or Portuguese, get the zipfile `winfreeling-langs-4.2.zip` and uncompress it in the same folder. Check the README.txt inside the zipfile.
 
 After uncompressing, you are ready to use FreeLing. See sections [Test FreeLing Installation on Windows](test-windows.md), [Execute FreeLing demo](../analyzer.md) and [Call FreeLing Library](apis-windows.md) to find out more on how to use FreeLing.
 
