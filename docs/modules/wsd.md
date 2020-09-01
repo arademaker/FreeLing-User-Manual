@@ -34,7 +34,7 @@ class ukb {
 The constructor receives a file name where module configuration options are found. The contents of the configuration files are the following:
 
 *   A section `<PageRankParameters>` specifying values for UKB stopping criteria. E.g.:  
-    ```XML
+    ```xml
     <PageRankParameters>
     Epsilon 0.03
     MaxIterations 10 
@@ -46,18 +46,7 @@ The constructor receives a file name where module configuration options are foun
     The `Damping` parameter is the standard parameter in PageRank algorithm.
 
 *   A section `<RelationFile>` specifying the knowledge base required by the algorithm. This section must contain a single line with the path to a file containing a list of relations between senses.  
-.. code-block:: XML
-    <RelationFile>
-    ../common/xwn.dat
-    </RelationFile>
-
-blabla
-    .. code-block:: XML
-       <RelationFile>
-       ../common/xwn.dat
-       </RelationFile>
-hoho  
-```XML
+    ```XML
     <RelationFile>
     ../common/xwn.dat
     </RelationFile>
