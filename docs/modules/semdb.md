@@ -1,7 +1,7 @@
 
 # Semantic Database Module
 
-This module is not a main processor in the default analysis chain, but it is used by the other modules that need access to the semantic database: The sense annotator <tt>senses</tt>, the word sense disambiguator <tt>ukb_wrap</tt>, the dependency parser <tt>dep_txala</tt>, and the coreference solver <tt>coref</tt>.
+This module is not a main processor in the default analysis chain, but it is used by the other modules that need access to the semantic database: The sense annotator <tt>senses</tt>, the dependency parser <tt>dep_txala</tt>, and the coreference solver <tt>coref</tt>.
 
 Moreover, this module can be used by the applications to enrich or post process the results of the analysis.
 
