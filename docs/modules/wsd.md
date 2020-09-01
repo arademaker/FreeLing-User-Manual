@@ -41,9 +41,10 @@ The constructor receives a file name where module configuration options are foun
     Damping 0.85
     </PageRankParameters>
 ```
-    The `Epsilon` value controls the precision with with the end of PageRank iterations is decided.  
-    `MaxIterations` controls the maximum number of PageRank iterations, even is no convergence is reached.  
-    The `Damping` parameter is the standard parameter in PageRank algorithm.
+
+The `Epsilon` value controls the precision with with the end of PageRank iterations is decided.  
+`MaxIterations` controls the maximum number of PageRank iterations, even is no convergence is reached.  
+The `Damping` parameter is the standard parameter in PageRank algorithm.
 
 *   A section `<RelationFile>` specifying the knowledge base required by the algorithm. This section must contain a single line with the path to a file containing a list of relations between senses.
     ```XML
