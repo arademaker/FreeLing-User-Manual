@@ -22,11 +22,14 @@ For short, we will refer to this installation folder as `%FLINSTALL%`.
 
 2. From the start menu, open a "Visual Studio x64 Native Tools Command Prompt" (or "x86" if your system is 32 bits)
 
-3. Change to the folder where you unzipped the source, and execute the commands:
+3. Unzip the downloaded zipfile. You'll get a folder named `zlib-1.2.11`
+
+4. Execute the commands:
    ```
+   cd zlib-1.2.11
    mkdir build
    cd build
-   cmake .. -DCMAKE_INSTALL_PREFIX=%FLINSTALL%\dependencies\zlib -G "NMake Makefiles"
+   cmake .. -DCMAKE_INSTALL_PREFIX=%FLINSTALL%\dependencies\zlib -DCMAKE_BUILD_TYPE=Release -G "NMake Makefiles"
    nmake install
    ```
   
@@ -48,8 +51,8 @@ The easiest way to install these dependencies is to get precompiled binary packa
 After this, the content of your `%FLINSTALL%` folder should look like (version numbers may differ):
 ```
    %FLINSTALL%\dependencies\zlib
-              \boost64-1.61.0-vs2015
-              \icu-57.1-vs2015
+                           \boost64-1.61.0-vs2015
+                           \icu-57.1-vs2015
 ```
 
 You can keep these names or change them to "boost" and "icu". 

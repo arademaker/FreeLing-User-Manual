@@ -19,7 +19,7 @@ Finally, it assumes you know where you want to install FreeLing (e.g. `C:\FreeLi
    ```
    mkdir build
    cd build
-   cmake .. -DCMAKE_INSTALL_PREFIX=%FLINSTALL%\freeling -DZLIB_INCLUDE_DIR=%FLINSTALL%\dependencies\zlib\include -DZLIB_LIBRARY=%FLINSTALL%\dependencies\zlib\lib\zlibd.lib -DBOOST_ROOT=%FLINSTALL%\dependencies\boost -DICU_ROOT=%FLINSTALL%\dependencies\icu -G "NMake Makefiles"
+   cmake .. -DCMAKE_INSTALL_PREFIX=%FLINSTALL%\freeling -DZLIB_ROOT=%FLINSTALL%\dependencies\zlib -DBOOST_ROOT=%FLINSTALL%\dependencies\boost -DICU_ROOT=%FLINSTALL%\dependencies\icu -G "NMake Makefiles"
    nmake install
    ```
 

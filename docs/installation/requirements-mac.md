@@ -1,14 +1,5 @@
 # Install FreeLing Requirements on MacOS
 
-
-## Install development tools
-
-MacOS development tools can be easily installed. Open a terminal, and write the command:
-  `xcode-select --install`  
-A window will pop-up, where you must click "*Install command-line tools*".
-
-If you need XCode for your developments, you can install it too, but you don't need it if you just want to compile FreeLing
-
 ## Install HomeBrew
 
 Some needed tools and libraries can be easily installed using HomeBrew.
@@ -16,10 +7,27 @@ Go to https://brew.sh and follow the instructions there to install it.
 
 ## Install required HomeBrew packages
     
+* Install boost and icu libraries:  
+  `brew install boost icu4c`  
+
+## Languages other than C++
+
+  If you plan to call FreeLing from a language other than C++, such as python, perl, or Java, make sure you have installed the development libraries for that language:
+
+  `brew install python3`  
+  `brew install perl`  
+  (and/or install your preferred Java JDK with JNI support)
+
+
+## If you plan to compile FreeLing from source:
+
 * Install CMake \(3.8 or newer\):  
   `brew install cmake`  
 
-* Install boost and icu libraries:  
-  `brew install boost --with-icu4c`  
+* Make sure clang is installed, either via XCode or via homebrew.
 
+## If you plan to build from source FreeLing APIs to non-C++ languages:
+
+* Install SWIG:
+  `brew install swig`  
 
