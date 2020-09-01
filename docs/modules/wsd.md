@@ -34,13 +34,13 @@ class ukb {
 The constructor receives a file name where module configuration options are found. The contents of the configuration files are the following:
 
 *   A section `<PageRankParameters>` specifying values for UKB stopping criteria. E.g.:  
-    ```xml
+    ```XML
     <PageRankParameters>
     Epsilon 0.03
     MaxIterations 10 
     Damping 0.85
     </PageRankParameters>
-    ```
+    ```  
     The `Epsilon` value controls the precision with with the end of PageRank iterations is decided.  
     `MaxIterations` controls the maximum number of PageRank iterations, even is no convergence is reached.  
     The `Damping` parameter is the standard parameter in PageRank algorithm.
@@ -50,7 +50,7 @@ The constructor receives a file name where module configuration options are foun
     <RelationFile>
     ../common/xwn.dat
     </RelationFile>
-    ```
+    ```  
     The path may be absolute, or relative to the position of the ukb module configuration file.
 
     Given file must contain the semantic relationship graph to load. It is a text filecontaining pairs of related senses (WN synsets in this case). Relations are neither labelled nor directed.
