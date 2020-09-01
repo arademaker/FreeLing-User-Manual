@@ -34,7 +34,6 @@ class ukb {
 The constructor receives a file name where module configuration options are found. The contents of the configuration files are the following:
 
 *   A section `<PageRankParameters>` specifying values for UKB stopping criteria. E.g.:
-
 ```XML
     <PageRankParameters>
     Epsilon 0.03
@@ -42,7 +41,6 @@ The constructor receives a file name where module configuration options are foun
     Damping 0.85
     </PageRankParameters>
 ```
-
     The `Epsilon` value controls the precision with with the end of PageRank iterations is decided.  
     `MaxIterations` controls the maximum number of PageRank iterations, even is no convergence is reached.  
     The `Damping` parameter is the standard parameter in PageRank algorithm.
