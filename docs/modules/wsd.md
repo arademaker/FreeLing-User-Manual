@@ -46,7 +46,18 @@ The constructor receives a file name where module configuration options are foun
     The `Damping` parameter is the standard parameter in PageRank algorithm.
 
 *   A section `<RelationFile>` specifying the knowledge base required by the algorithm. This section must contain a single line with the path to a file containing a list of relations between senses.  
-    ```XML
+.. code-block:: XML
+    <RelationFile>
+    ../common/xwn.dat
+    </RelationFile>
+
+blabla
+    .. code-block:: XML
+       <RelationFile>
+       ../common/xwn.dat
+       </RelationFile>
+hoho  
+```XML
     <RelationFile>
     ../common/xwn.dat
     </RelationFile>
