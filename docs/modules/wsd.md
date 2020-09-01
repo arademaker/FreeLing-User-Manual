@@ -35,13 +35,13 @@ The constructor receives a file name where module configuration options are foun
 
 *   A section `<PageRankParameters>` specifying values for UKB stopping criteria. E.g.:
 
-    ```XML
+```XML
     <PageRankParameters>
     Epsilon 0.03
     MaxIterations 10 
     Damping 0.85
     </PageRankParameters>
-    ```
+```
 
     The `Epsilon` value controls the precision with with the end of PageRank iterations is decided.  
     `MaxIterations` controls the maximum number of PageRank iterations, even is no convergence is reached.  
@@ -58,9 +58,10 @@ The constructor receives a file name where module configuration options are foun
     Given file must contain the semantic relationship graph to load. It is a text filecontaining pairs of related senses (WN synsets in this case). Relations are neither labelled nor directed.
 
     An example of the content of this file is:
-    ```
+
+```
     00003431-v 14877585-n
     00003483-r 00104099-r
     00003483-r 00890351-a
-    ```
+```
 
